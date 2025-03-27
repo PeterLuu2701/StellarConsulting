@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "PackagePath": "staticwebassets\\StellarConsulting.phsv5rqfph.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StellarConsulting.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StellarConsulting.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.StellarConsulting.props",
+      "PackagePath": "build\\StellarConsulting.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.StellarConsulting.props",
+      "PackagePath": "buildMultiTargeting\\StellarConsulting.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.StellarConsulting.props",
+      "PackagePath": "buildTransitive\\StellarConsulting.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
