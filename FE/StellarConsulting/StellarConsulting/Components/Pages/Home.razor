@@ -65,7 +65,7 @@
         try
         {
             var loginRequest = new { Username = username, Password = password };
-            var response = await Http.PostAsJsonAsync("api/Auth/login", loginRequest);
+            var response = await Http.PostAsJsonAsync("https://localhost:7196/api/Auth/login", loginRequest);
 
             if (response.IsSuccessStatusCode)
             {

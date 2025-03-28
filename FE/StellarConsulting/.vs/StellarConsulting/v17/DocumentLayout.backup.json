@@ -42,8 +42,7 @@
               "RelativeToolTip": "StellarConsulting\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:11:55.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T16:11:55.951Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "StellarConsulting\\Components\\Pages\\Home.razor",
               "ToolTip": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor*",
               "RelativeToolTip": "StellarConsulting\\Components\\Pages\\Home.razor*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAUwDwAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAD4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-28T15:56:42.587Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "StellarConsulting\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T15:10:34.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T15:10:34.832Z"
             }
           ]
         }
