@@ -216,6 +216,10 @@ public partial class ApplicationDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("name");
+            entity.Property(e => e.Password)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("password");
             entity.Property(e => e.RoleId).HasColumnName("role_id");
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)

@@ -1,20 +1,22 @@
 ﻿@page "/"
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
 
 <head>
-    <link href="~/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <h3>Login</h3>
 
 <div class="login-container">
-    <form>
+    <form @onsubmit="HandleLogin" @onsubmit:preventDefault="true">
         <div class="form-group">
             <label for="username">Username:</label>
-            <input id="username" type="text" class="form-control" placeholder="Enter username" />
+            <input id="username" type="text" class="form-control" name="username" @bind="username" />
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
-            <input id="password" type="password" class="form-control" placeholder="Enter password" />
+            <input id="password" type="password" class="form-control" name="password" @bind="password" />
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
@@ -53,3 +55,46 @@
             background-color: #0056b3;
         }
 </style>
+
+@code {
+    private string username;
+    private string password;
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            var loginRequest = new { Username = username, Password = password };
+            var response = await Http.PostAsJsonAsync("api/Auth/login", loginRequest);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
+                await JSRuntime.InvokeVoidAsync("alert", result.Message); // Display success message
+            }
+            else
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                await JSRuntime.InvokeVoidAsync("alert", $"Login failed: {error}"); // Display error message
+            }
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"An error occurred: {ex.Message}");
+        }
+    }
+
+    public class LoginResponse
+    {
+        public string Message { get; set; }
+        public UserInfo User { get; set; }
+    }
+
+    public class UserInfo
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int RoleId { get; set; }
+        public string Role { get; set; }
+    }
+}

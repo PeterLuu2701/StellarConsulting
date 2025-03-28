@@ -1,10 +1,14 @@
 using StellarConsulting.Components;
+using Microsoft.AspNetCore.Components; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+// Register HttpClient
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(sp.GetRequiredService<NavigationManager>().BaseUri) });
 
 var app = builder.Build();
 

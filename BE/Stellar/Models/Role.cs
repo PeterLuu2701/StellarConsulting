@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-
 namespace Stellar.Models;
 
 public partial class Role

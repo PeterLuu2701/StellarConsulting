@@ -12,6 +12,7 @@ public partial class User
 
     public int? RoleId { get; set; }
 
+    public string? Password { get; set; }
     [JsonIgnore]
     public virtual ICollection<CourseOutline> CourseOutlineApprovedByAcademicChairUsers { get; set; } = new List<CourseOutline>();
     [JsonIgnore]

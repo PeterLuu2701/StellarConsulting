@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OZGK9mjROdRvau2/ntbG4+Di6/IpNsGq+UBipiBiflE=",
+  "Hash": "IkaHM+SG6bLypjhOG/3FyQDnsxfPrVrMiBfK6Fz9AaY=",
   "Source": "StellarConsulting",
   "BasePath": "_content/StellarConsulting",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "StellarConsulting\\wwwroot",
       "Source": "StellarConsulting",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
+      "Identity": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/StellarConsulting",
       "RelativePath": "StellarConsulting#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css"
+      "OriginalItemSpec": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css"
     },
     {
-      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "Identity": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/StellarConsulting",
       "RelativePath": "StellarConsulting#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css"
+      "OriginalItemSpec": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css"
     },
     {
-      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "Identity": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -94,17 +94,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bpk8xqwxhs",
-      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "Identity": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -146,7 +146,7 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -167,7 +167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -183,7 +183,7 @@
     },
     {
       "Route": "app.da95v2qkru.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -227,8 +227,8 @@
       ]
     },
     {
-      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -237,7 +237,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -245,11 +245,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -259,7 +259,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bpk8xqwxhs"
+          "Value": "6gzpyzhau4"
         },
         {
           "Name": "label",
@@ -267,13 +267,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
     {
       "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -282,7 +282,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -290,11 +290,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -304,13 +304,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -331,7 +331,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -355,7 +355,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -376,7 +376,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -392,7 +392,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -413,7 +413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -437,7 +437,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -458,7 +458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:28:14 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -474,7 +474,7 @@
     },
     {
       "Route": "StellarConsulting.bundle.scp.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -495,7 +495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:37:31 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -511,7 +511,7 @@
     },
     {
       "Route": "StellarConsulting.phsv5rqfph.bundle.scp.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -532,7 +532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:37:31 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -556,7 +556,7 @@
     },
     {
       "Route": "StellarConsulting.phsv5rqfph.styles.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -577,7 +577,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:37:31 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -601,7 +601,7 @@
     },
     {
       "Route": "StellarConsulting.styles.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
+      "AssetFile": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -622,7 +622,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 27 Mar 2025 22:37:31 GMT"
+          "Value": "Fri, 28 Mar 2025 05:00:57 GMT"
         },
         {
           "Name": "Cache-Control",
