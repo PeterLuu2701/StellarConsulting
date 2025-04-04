@@ -1,41 +1,45 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavManager
 
 <div class="page">
     <main>
-        <!-- Top navigation bar -->
-        <div class="top-row px-4" style="display: flex; justify-content: space-between; align-items: center;">
-            <!-- Left: logo -->
-            <div>
-                <img src="images/login-title.png" alt="Login Logo" style="height: 40px; max-width: 200px;" />
-            </div>
-
-            <!-- Right: avatar dropdown -->
-            <div class="dropdown">
-                <div class="avatar rounded-circle dropdown-toggle d-flex justify-content-center align-items-center text-white"
-                     id="avatarDropdown"
-                     data-bs-toggle="dropdown"
-                     aria-expanded="false"
-                     style="width: 40px; height: 40px; background-color: @AvatarColor; cursor: pointer;">
-                    @AvatarInitials
+        @* Show topbar on all pages except /login *@
+        @if (!IsLoginPage)
+        {
+            <div class="top-row px-4" style="display: flex; justify-content: space-between; align-items: center;">
+                <!-- Left: Logo -->
+                <div>
+                    <img src="images/login-title.png" alt="Login Logo" style="height: 40px; max-width: 200px;" />
                 </div>
 
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="avatarDropdown">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-            </div>
-        </div>
+                <!-- Right: Avatar dropdown -->
+                <div class="dropdown">
+                    <div class="avatar rounded-circle dropdown-toggle d-flex justify-content-center align-items-center text-white"
+                         id="avatarDropdown"
+                         data-bs-toggle="dropdown"
+                         aria-expanded="false"
+                         style="width: 40px; height: 40px; background-color: @AvatarColor; cursor: pointer;">
+                        @AvatarInitials
+                    </div>
 
-        <!-- Page content -->
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="avatarDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        }
+
+        <!-- Page body content -->
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
 
-<!-- Error message area -->
+<!-- Global Blazor error UI -->
 <div id="blazor-error-ui">
     An unhandled error has occurred.
     <a href="" class="reload">Reload</a>
@@ -43,16 +47,21 @@
 </div>
 
 @code {
-    private string Username = "Eric Idle";
+    private string Username = "Eric Idle"; // Simulated logged-in user
     private string AvatarInitials;
     private string AvatarColor;
+
+    // Determine if current page is the login page
+    private bool IsLoginPage =>
+        NavManager.Uri.Contains("/login", StringComparison.OrdinalIgnoreCase);
 
     protected override void OnInitialized()
     {
         AvatarInitials = GetInitials(Username);
-        AvatarColor = "#7E57C2";
+        AvatarColor = "#7E57C2"; // Fixed purple color for avatar
     }
 
+    // Extract initials from full name
     private string GetInitials(string name)
     {
         if (string.IsNullOrWhiteSpace(name))

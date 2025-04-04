@@ -16,7 +16,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 
 // Register ApplicationDbContext with SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Replace with your connection string
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Server=localhost;Database=Stellar;Trusted_Connection=True;TrustServerCertificate=True;"))); // Replace with your connection string
 
 // Add CORS policy
 builder.Services.AddCors(options =>
