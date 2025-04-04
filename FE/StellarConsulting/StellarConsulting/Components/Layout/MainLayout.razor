@@ -2,18 +2,62 @@
 
 <div class="page">
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        <!-- Top navigation bar -->
+        <div class="top-row full-width d-flex justify-between align-center px-4">
+            <!-- Left: logo -->
+            <div class="logo-container">
+                <img src="images/login-title.png" alt="Login Logo" style="height: 40px;" />
+            </div>
+
+            <!-- Right: avatar -->
+            <div class="avatar" style="background-color: @AvatarColor;">@AvatarInitials</div>
         </div>
 
+
+        <!-- Page content -->
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
 
+<!-- Error message area -->
 <div id="blazor-error-ui">
     An unhandled error has occurred.
     <a href="" class="reload">Reload</a>
     <a class="dismiss">🗙</a>
 </div>
+
+@code {
+    private string Username = "Eric Idle";
+    private string AvatarInitials;
+    private string AvatarColor;
+
+    protected override void OnInitialized()
+    {
+        AvatarInitials = GetInitials(Username);
+        AvatarColor = GetRandomColor();
+    }
+
+    private string GetInitials(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            return "?";
+
+        var parts = name.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+        if (parts.Length == 1)
+            return parts[0].Substring(0, 1).ToUpper();
+
+        return (parts[0].Substring(0, 1) + parts[1].Substring(0, 1)).ToUpper();
+    }
+
+    private string GetRandomColor()
+    {
+        var random = new Random();
+        int r = random.Next(100, 256);
+        int g = random.Next(100, 256);
+        int b = random.Next(100, 256);
+        return $"rgb({r}, {g}, {b})";
+    }
+}

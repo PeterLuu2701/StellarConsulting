@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zEolVVbpAVvzYpuPEfUEqlt+U7X5DUnTuzTQKHeX3c0=",
+  "Hash": "FGJZbC26s5CJSOdWFP74nmUaTomYwJ5jdyq3f1NQ1TA=",
   "Source": "StellarConsulting",
   "BasePath": "_content/StellarConsulting",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "StellarConsulting\\wwwroot",
       "Source": "StellarConsulting",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "StellarConsulting.styles.css",
+      "RelativePath": "StellarConsulting#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -31,17 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "phsv5rqfph",
+      "Integrity": "A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css"
+      "OriginalItemSpec": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css"
     },
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "StellarConsulting.bundle.scp.css",
+      "RelativePath": "StellarConsulting#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -50,104 +52,692 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "phsv5rqfph",
+      "Integrity": "A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css"
+      "OriginalItemSpec": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css"
     },
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "app.css",
+      "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "87heq5c7bg",
+      "Integrity": "bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "bootstrap/bootstrap.min.css",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "bootstrap/bootstrap.min.css.map",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\images\\login-title.png",
+      "Identity": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\images\\login-title.png",
       "SourceId": "StellarConsulting",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
+      "ContentRoot": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\",
       "BasePath": "_content/StellarConsulting",
-      "RelativePath": "images/login-title.png",
+      "RelativePath": "images/login-title#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "a6s0tbi5fu",
+      "Integrity": "ojfqz8IWsshyOgMxF29+huO8G0BnN91WcOXQmURr5YY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\login-title.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.87heq5c7bg.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 17:03:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "87heq5c7bg"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 17:03:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "images/login-title.a6s0tbi5fu.png",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\images\\login-title.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ojfqz8IWsshyOgMxF29+huO8G0BnN91WcOXQmURr5YY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 16:42:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6s0tbi5fu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/login-title.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ojfqz8IWsshyOgMxF29+huO8G0BnN91WcOXQmURr5YY="
+        }
+      ]
+    },
+    {
+      "Route": "images/login-title.png",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\images\\login-title.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ojfqz8IWsshyOgMxF29+huO8G0BnN91WcOXQmURr5YY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 16:42:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ojfqz8IWsshyOgMxF29+huO8G0BnN91WcOXQmURr5YY="
+        }
+      ]
+    },
+    {
+      "Route": "StellarConsulting.bundle.scp.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs="
+        }
+      ]
+    },
+    {
+      "Route": "StellarConsulting.phsv5rqfph.bundle.scp.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StellarConsulting.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phsv5rqfph"
+        },
+        {
+          "Name": "label",
+          "Value": "StellarConsulting.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs="
+        }
+      ]
+    },
+    {
+      "Route": "StellarConsulting.phsv5rqfph.styles.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phsv5rqfph"
+        },
+        {
+          "Name": "label",
+          "Value": "StellarConsulting.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs="
+        }
+      ]
+    },
+    {
+      "Route": "StellarConsulting.styles.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\Debug\\net8.0\\scopedcss\\bundle\\StellarConsulting.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 22:48:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A41f9ewSKwDasG1iTLQfjpGzW1XBHLAuJq6XyqKguAs="
+        }
+      ]
     }
   ]
 }

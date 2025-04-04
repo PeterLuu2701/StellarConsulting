@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\COMP253\\FE\\StellarConsulting\\",
+  "WorkspaceRootPath": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|d:\\comp253\\fe\\stellarconsulting\\stellarconsulting\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|d:\\comp253\\fe\\stellarconsulting\\stellarconsulting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|d:\\comp253\\fe\\stellarconsulting\\stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,44 +38,88 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Program.cs",
-              "RelativeDocumentMoniker": "StellarConsulting\\Program.cs",
-              "ToolTip": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Program.cs",
-              "RelativeToolTip": "StellarConsulting\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:11:55.951Z"
+              "DocumentIndex": 0,
+              "Title": "app.css",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "StellarConsulting\\wwwroot\\app.css",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css*",
+              "RelativeToolTip": "StellarConsulting\\wwwroot\\app.css*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-04T16:53:49.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Login.razor",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "StellarConsulting\\Components\\Pages\\Login.razor",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "StellarConsulting\\Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T16:44:57.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Program.cs",
+              "RelativeDocumentMoniker": "StellarConsulting\\Program.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Program.cs",
+              "RelativeToolTip": "StellarConsulting\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:11:55.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Home.razor",
-              "DocumentMoniker": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "StellarConsulting\\Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor*",
-              "RelativeToolTip": "StellarConsulting\\Components\\Pages\\Home.razor*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAD4AAAAkAAAAAAAAAA==",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "StellarConsulting\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEQAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-28T15:56:42.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Components\\Layout\\MainLayout.razor",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "StellarConsulting\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\COMP253\\FE\\StellarConsulting\\StellarConsulting\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "StellarConsulting\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T15:10:34.832Z"
+              "WhenOpened": "2025-03-28T15:10:34.832Z",
+              "EditorCaption": ""
             }
           ]
         }

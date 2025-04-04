@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Yan\\.nuget\\packages\\": {},
-    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\yansi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\StellarConsulting.csproj",
+      "projectUniqueName": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\StellarConsulting.csproj",
       "projectName": "StellarConsulting",
-      "projectPath": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\StellarConsulting.csproj",
-      "packagesPath": "C:\\Users\\Yan\\.nuget\\packages\\",
-      "outputPath": "D:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\",
+      "projectPath": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\StellarConsulting.csproj",
+      "packagesPath": "C:\\Users\\yansi\\.nuget\\packages\\",
+      "outputPath": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Yan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yansi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -45,7 +45,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -69,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
