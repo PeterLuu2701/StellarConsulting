@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Stellar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+882e4f251816fde01f76ceca01906f2392b9b4cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95cd9682dbad5d62cb6b307c044926d5386a7842")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stellar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stellar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
