@@ -175,3 +175,5 @@ D:\COMP253\BE\Stellar\obj\Debug\net8.0\Stellar.pdb
 D:\COMP253\BE\Stellar\obj\Debug\net8.0\Stellar.genruntimeconfig.cache
 D:\COMP253\BE\Stellar\obj\Debug\net8.0\ref\Stellar.dll
 D:\COMP253\BE\Stellar\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\COMP253\BE\Stellar\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\COMP253\BE\Stellar\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
