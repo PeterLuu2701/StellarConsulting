@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FGJZbC26s5CJSOdWFP74nmUaTomYwJ5jdyq3f1NQ1TA=",
+  "Hash": "gECTyYRKW/bhoW1pWUtX0+sC8Cy7dqrhAUX7VX2wdUs=",
   "Source": "StellarConsulting",
   "BasePath": "_content/StellarConsulting",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "87heq5c7bg",
-      "Integrity": "bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8=",
+      "Fingerprint": "zl1eilay3k",
+      "Integrity": "WRoLT6FpCPL0Ctn0lAy0PMo7eQDMm0TSJ0La3XP4wbA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -166,51 +166,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "app.87heq5c7bg.css",
-      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3107"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 17:03:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "87heq5c7bg"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8="
-        }
-      ]
-    },
-    {
       "Route": "app.css",
       "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
       "Selectors": [],
@@ -221,7 +176,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3107"
+          "Value": "3080"
         },
         {
           "Name": "Content-Type",
@@ -229,11 +184,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8=\""
+          "Value": "\"WRoLT6FpCPL0Ctn0lAy0PMo7eQDMm0TSJ0La3XP4wbA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 04 Apr 2025 17:03:53 GMT"
+          "Value": "Fri, 04 Apr 2025 17:22:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -243,7 +198,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bKMC9y87GWnsmEYranS2pRu47ebsQtg4v3VMdvQ2cr8="
+          "Value": "sha256-WRoLT6FpCPL0Ctn0lAy0PMo7eQDMm0TSJ0La3XP4wbA="
+        }
+      ]
+    },
+    {
+      "Route": "app.zl1eilay3k.css",
+      "AssetFile": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3080"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WRoLT6FpCPL0Ctn0lAy0PMo7eQDMm0TSJ0La3XP4wbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 17:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zl1eilay3k"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WRoLT6FpCPL0Ctn0lAy0PMo7eQDMm0TSJ0La3XP4wbA="
         }
       ]
     },
