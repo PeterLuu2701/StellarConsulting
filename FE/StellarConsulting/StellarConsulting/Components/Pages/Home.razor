@@ -3,34 +3,53 @@
 @inject HttpClient Http
 @inject IJSRuntime JSRuntime
 
-
 <div class="container py-4">
 
-    <!-- Search Bar (Full width, top row) -->
-    <div class="d-flex justify-content-center mb-3">
-        <div class="input-group w-50">
-            <input type="text" class="form-control rounded-start-pill" placeholder="Search by course name" />
-            <button class="btn btn-purple rounded-end-pill" type="button">
-                <i class="bi bi-search"></i>
-            </button>
+    <!-- Drop-down Row -->
+    <div class="row justify-content-start align-items-end mb-3">
+        <div class="col-auto">
+            <label class="form-label">Program</label>
+            <select class="form-select rounded-pill">
+                <option selected>Business Information System</option>
+                <option>Option 2</option>
+            </select>
+        </div>
+        <div class="col-auto">
+            <label class="form-label">Course</label>
+            <select class="form-select rounded-pill">
+                <option selected>COMP233 - Object Oriented Programming</option>
+                <option>Option 2</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <!-- Buttons and Search Row -->
+    <div class="row align-items-center mb-4">
+        <div class="col">
+            <button class="btn btn-secondary shadow-sm rounded-pill px-4">Add New</button>
+        </div>
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control rounded-start-pill" placeholder="Search" />
+                <button class="btn btn-purple rounded-end-pill">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col text-end">
+            <button class="btn btn-secondary shadow-sm rounded-pill px-4">Course Records</button>
         </div>
     </div>
 
-    <!-- Buttons Row -->
-    <div class="d-flex justify-content-between align-items-center mb-4 px-1">
-        <button class="btn btn-secondary shadow-sm rounded-pill px-4">Add New</button>
-        <button class="btn btn-secondary shadow-sm rounded-pill px-4" style="margin-right: 36px;">Course Records</button>
-    </div>
-
-
     <!-- Table -->
-    <table class="table table-borderless">
-        <thead class="border-bottom">
+    <table class="table table-borderless align-middle">
+        <thead class="border-bottom text-purple">
             <tr>
-                <th class="text-purple">Course Name</th>
-                <th class="text-purple">Course Owner</th>
-                <th class="text-purple">Program</th>
-                <th class="text-purple">Course Outline</th>
+                <th>Course Name</th>
+                <th>Course Owner</th>
+                <th>Program</th>
+                <th>Status</th>
+                <th class="outline-col">Course Outline</th>
             </tr>
         </thead>
         <tbody>
@@ -38,20 +57,53 @@
                 <td>Course 1</td>
                 <td>Owner A</td>
                 <td>Program 1</td>
-                <td>
-                    <button class="btn btn-secondary rounded-pill px-4">View</button>
-                </td>
+                <td>Approved</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
             </tr>
             <tr class="border-bottom">
                 <td>Course 2</td>
                 <td>Owner B</td>
+                <td>Program 2</td>
+                <td>Approved</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 3</td>
+                <td>Owner C</td>
+                <td>Program 3</td>
+                <td>Approved</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 4</td>
+                <td>Owner D</td>
+                <td>Program 4</td>
+                <td>Pending</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 5</td>
+                <td>Owner E</td>
+                <td>Program 5</td>
+                <td>Pending</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 6</td>
+                <td>Owner F</td>
+                <td>Program 6</td>
+                <td>Rejected</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 7</td>
+                <td>Owner G</td>
                 <td>
-                    <div>Program 2</div>
+                    <div>Program 7</div>
                     <div>Program 4</div>
                 </td>
-                <td>
-                    <button class="btn btn-secondary rounded-pill px-4">View</button>
-                </td>
+                <td>Rejected</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
             </tr>
         </tbody>
     </table>
@@ -82,15 +134,27 @@
             background-color: #777;
         }
 
-    .table td, .table th {
-        vertical-align: middle;
+    .form-label {
+        font-size: 0.85rem;
+        color: #888;
+        margin-bottom: 0.25rem;
     }
 
-    .input-group .form-control {
+/*     .table th, .table td {
+        padding: 0.75rem 0.5rem;
+    } */
+
+/*     .input-group .form-control {
         border-right: none;
-    }
+    } */
 
     .input-group .btn {
         border-left: none;
     }
+
+    .outline-col {
+        width: 120px;
+        white-space: nowrap; 
+    }
+
 </style>
