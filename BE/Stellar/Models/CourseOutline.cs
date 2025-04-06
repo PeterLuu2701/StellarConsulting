@@ -35,6 +35,10 @@ public partial class CourseOutline
 
     public DateOnly? ApprovedByAcademicChairDate { get; set; }
 
+    public bool? ProgramHeadApproval { get; set; }
+
+    public bool? AcademicChairApproval { get; set; }
+
     public virtual User? ApprovedByAcademicChairUser { get; set; }
 
     public virtual User? ApprovedByProgramHeadUser { get; set; }

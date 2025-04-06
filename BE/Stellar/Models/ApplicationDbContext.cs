@@ -19,6 +19,8 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<CourseOutline> CourseOutlines { get; set; }
 
+    public virtual DbSet<Degree> Degrees { get; set; }
+
     public virtual DbSet<LearningOutcome> LearningOutcomes { get; set; }
 
     public virtual DbSet<LearningStep> LearningSteps { get; set; }
@@ -28,6 +30,8 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<ProgramCourse> ProgramCourses { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
+
+    public virtual DbSet<School> Schools { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
@@ -67,6 +71,7 @@ public partial class ApplicationDbContext : DbContext
             entity.ToTable("course_outline");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AcademicChairApproval).HasColumnName("academic_chair_approval");
             entity.Property(e => e.AcademicYear)
                 .HasMaxLength(255)
                 .IsUnicode(false)
@@ -92,6 +97,7 @@ public partial class ApplicationDbContext : DbContext
             entity.Property(e => e.PreparedByUserId).HasColumnName("prepared_by_user_id");
             entity.Property(e => e.PreparedDate).HasColumnName("prepared_date");
             entity.Property(e => e.ProgramCourseId).HasColumnName("program_course_id");
+            entity.Property(e => e.ProgramHeadApproval).HasColumnName("program_head_approval");
             entity.Property(e => e.StudentAssessment)
                 .HasColumnType("text")
                 .HasColumnName("student_assessment");
@@ -115,6 +121,19 @@ public partial class ApplicationDbContext : DbContext
             entity.HasOne(d => d.ProgramCourse).WithMany(p => p.CourseOutlines)
                 .HasForeignKey(d => d.ProgramCourseId)
                 .HasConstraintName("FK__course_ou__progr__49C3F6B7");
+        });
+
+        modelBuilder.Entity<Degree>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__degree__3213E83FA0CF7A73");
+
+            entity.ToTable("degree");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("name");
         });
 
         modelBuilder.Entity<LearningOutcome>(entity =>
@@ -163,6 +182,7 @@ public partial class ApplicationDbContext : DbContext
             entity.ToTable("program");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.DegreeId).HasColumnName("degree_id");
             entity.Property(e => e.Description)
                 .HasMaxLength(255)
                 .IsUnicode(false)
@@ -171,6 +191,15 @@ public partial class ApplicationDbContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("name");
+            entity.Property(e => e.SchoolId).HasColumnName("school_id");
+
+            entity.HasOne(d => d.Degree).WithMany(p => p.Programs)
+                .HasForeignKey(d => d.DegreeId)
+                .HasConstraintName("FK_ProgramDegree");
+
+            entity.HasOne(d => d.School).WithMany(p => p.Programs)
+                .HasForeignKey(d => d.SchoolId)
+                .HasConstraintName("FK_ProgramSchool");
         });
 
         modelBuilder.Entity<ProgramCourse>(entity =>
@@ -197,6 +226,19 @@ public partial class ApplicationDbContext : DbContext
             entity.HasKey(e => e.Id).HasName("PK__role__3213E83F302AFFB3");
 
             entity.ToTable("role");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("name");
+        });
+
+        modelBuilder.Entity<School>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__school__3213E83F7A6C53FC");
+
+            entity.ToTable("school");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
