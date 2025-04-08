@@ -95,7 +95,8 @@
                 if (result.User.RoleId == 1)
                 {
                     // Authorized user, navigate to homepage
-                    NavigationManager.NavigateTo("/");
+                    await JSRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", result.Token);
+                    NavigationManager.NavigateTo("/home");
                 }
                 else
                 {
@@ -121,6 +122,7 @@
     {
         public string Message { get; set; }
         public UserInfo User { get; set; }
+        public string Token { get; set; }
     }
 
     public class UserInfo

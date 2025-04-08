@@ -23,6 +23,7 @@
         </div>
     </div>
     <br />
+
     <!-- Buttons and Search Row -->
     <div class="row align-items-center mb-4">
         <div class="col">
@@ -42,71 +43,42 @@
     </div>
 
     <!-- Table -->
-    <table class="table table-borderless align-middle">
-        <thead class="border-bottom text-purple">
-            <tr>
-                <th>Course Name</th>
-                <th>Course Owner</th>
-                <th>Program</th>
-                <th>Status</th>
-                <th class="outline-col">Course Outline</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="border-bottom">
-                <td>Course 1</td>
-                <td>Owner A</td>
-                <td>Program 1</td>
-                <td>Approved</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 2</td>
-                <td>Owner B</td>
-                <td>Program 2</td>
-                <td>Approved</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 3</td>
-                <td>Owner C</td>
-                <td>Program 3</td>
-                <td>Approved</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 4</td>
-                <td>Owner D</td>
-                <td>Program 4</td>
-                <td>Pending</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 5</td>
-                <td>Owner E</td>
-                <td>Program 5</td>
-                <td>Pending</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 6</td>
-                <td>Owner F</td>
-                <td>Program 6</td>
-                <td>Rejected</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 7</td>
-                <td>Owner G</td>
-                <td>
-                    <div>Program 7</div>
-                    <div>Program 4</div>
-                </td>
-                <td>Rejected</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-        </tbody>
-    </table>
+    @if (isLoading)
+    {
+        <p>Loading course outlines...</p>
+    }
+    else if (courseOutlines?.Count == 0)
+    {
+        <p>No course outlines found.</p>
+    }
+    else
+    {
+        <table class="table table-borderless align-middle">
+            <thead class="border-bottom text-purple">
+                <tr>
+                    <th>Course Name</th>
+                    <th>Course Owner</th>
+                    <th>Program</th>
+                    <th>Status</th>
+                    <th class="outline-col">Course Outline</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in courseOutlines)
+                {
+                    <tr class="border-bottom">
+                        <td>@course.CourseName</td>
+                        <td>@course.CourseOwner</td>
+                        <td>@course.Program</td>
+                        <td>@course.Status</td>
+                        <td>
+                            <button class="btn btn-secondary rounded-pill px-4">View</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </div>
 
 <style>
@@ -140,21 +112,61 @@
         margin-bottom: 0.25rem;
     }
 
-/*     .table th, .table td {
-        padding: 0.75rem 0.5rem;
-    } */
-
-/*     .input-group .form-control {
-        border-right: none;
-    } */
-
     .input-group .btn {
         border-left: none;
     }
 
     .outline-col {
         width: 120px;
-        white-space: nowrap; 
+        white-space: nowrap;
+    }
+</style>
+
+@code {
+    private List<CourseOutline> courseOutlines = new();
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Not logged in. Please login.");
+                return;
+            }
+
+            var request = new HttpRequestMessage(HttpMethod.Get, "api/CourseOutlines");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var response = await Http.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                courseOutlines = await response.Content.ReadFromJsonAsync<List<CourseOutline>>();
+            }
+            else
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                await JSRuntime.InvokeVoidAsync("alert", $"Failed to load data: {error}");
+            }
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"Error: {ex.Message}");
+        }
+
+        isLoading = false;
     }
 
-</style>
+    public class CourseOutline
+    {
+        public int Id { get; set; }
+        public string CourseName { get; set; }
+        public string CourseOwner { get; set; }
+        public string Program { get; set; }
+        public string Status { get; set; }
+    }
+}
