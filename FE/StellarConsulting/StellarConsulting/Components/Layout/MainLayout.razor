@@ -1,27 +1,48 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavManager
 
 <div class="page">
     <main>
-        <!-- Top navigation bar -->
-        <div class="top-row full-width d-flex justify-between align-center px-4">
-            <!-- Left: logo -->
-            <div class="logo-container">
-                <img src="images/login-title.png" alt="Login Logo" style="height: 40px;" />
+        @* Show topbar on all pages except /login *@
+        @if (!IsLoginPage)
+        {
+            <div class="top-row">
+                <div class="container d-flex justify-content-between align-items-center py-2">
+                    <!-- Left: Logo -->
+                    <div>
+                        <img src="images/login-title.png" alt="Login Logo" style="height: 40px; max-width: 200px;" />
+                    </div>
+
+                    <!-- Right: Avatar dropdown -->
+                    <div class="dropdown">
+                        <div class="avatar rounded-circle dropdown-toggle d-flex justify-content-center align-items-center text-white"
+                             id="avatarDropdown"
+                             data-bs-toggle="dropdown"
+                             aria-expanded="false"
+                             style="width: 40px; height: 40px; background-color: @AvatarColor; cursor: pointer;">
+                            @AvatarInitials
+                        </div>
+
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="avatarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <!-- Right: avatar -->
-            <div class="avatar" style="background-color: @AvatarColor;">@AvatarInitials</div>
-        </div>
+        }
 
 
-        <!-- Page content -->
+        <!-- Page body content -->
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
 
-<!-- Error message area -->
+<!-- Global Blazor error UI -->
 <div id="blazor-error-ui">
     An unhandled error has occurred.
     <a href="" class="reload">Reload</a>
@@ -29,16 +50,21 @@
 </div>
 
 @code {
-    private string Username = "Eric Idle";
+    private string Username = "Eric Idle"; // Simulated logged-in user
     private string AvatarInitials;
     private string AvatarColor;
+
+    // Determine if current page is the login page
+    private bool IsLoginPage =>
+        NavManager.Uri.Contains("/login", StringComparison.OrdinalIgnoreCase);
 
     protected override void OnInitialized()
     {
         AvatarInitials = GetInitials(Username);
-        AvatarColor = GetRandomColor();
+        AvatarColor = "#7E57C2"; // Fixed purple color for avatar
     }
 
+    // Extract initials from full name
     private string GetInitials(string name)
     {
         if (string.IsNullOrWhiteSpace(name))
@@ -50,14 +76,5 @@
             return parts[0].Substring(0, 1).ToUpper();
 
         return (parts[0].Substring(0, 1) + parts[1].Substring(0, 1)).ToUpper();
-    }
-
-    private string GetRandomColor()
-    {
-        var random = new Random();
-        int r = random.Next(100, 256);
-        int g = random.Next(100, 256);
-        int b = random.Next(100, 256);
-        return $"rgb({r}, {g}, {b})";
     }
 }

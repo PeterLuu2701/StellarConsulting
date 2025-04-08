@@ -54,15 +54,14 @@ h1:focus {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: white;
     font-weight: bold;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    color: white;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    margin-left: auto;
-    margin-right: 10px;
+    cursor: pointer;
 }
 
 /* Layout helpers */
@@ -79,5 +78,7 @@ h1:focus {
 }
 
 .top-row {
-    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }

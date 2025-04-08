@@ -3,100 +3,158 @@
 @inject HttpClient Http
 @inject IJSRuntime JSRuntime
 
-<head>
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
-</head>
+<div class="container py-4">
 
-<h3>Login</h3>
+    <!-- Drop-down Row -->
+    <div class="row justify-content-start align-items-end mb-3">
+        <div class="col-auto">
+            <label class="form-label">Program</label>
+            <select class="form-select rounded-pill">
+                <option selected>Business Information System</option>
+                <option>Option 2</option>
+            </select>
+        </div>
+        <div class="col-auto">
+            <label class="form-label">Course</label>
+            <select class="form-select rounded-pill">
+                <option selected>COMP233 - Object Oriented Programming</option>
+                <option>Option 2</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <!-- Buttons and Search Row -->
+    <div class="row align-items-center mb-4">
+        <div class="col">
+            <button class="btn btn-secondary shadow-sm rounded-pill px-4">Add New</button>
+        </div>
+        <div class="col">
+            <div class="input-group">
+                <input type="text" class="form-control rounded-start-pill" placeholder="Search" />
+                <button class="btn btn-purple rounded-end-pill">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col text-end">
+            <button class="btn btn-secondary shadow-sm rounded-pill px-4">Course Records</button>
+        </div>
+    </div>
 
-<div class="login-container">
-    <form @onsubmit="HandleLogin" @onsubmit:preventDefault="true">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input id="username" type="text" class="form-control" name="username" @bind="username" />
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input id="password" type="password" class="form-control" name="password" @bind="password" />
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
+    <!-- Table -->
+    <table class="table table-borderless align-middle">
+        <thead class="border-bottom text-purple">
+            <tr>
+                <th>Course Name</th>
+                <th>Course Owner</th>
+                <th>Program</th>
+                <th>Status</th>
+                <th class="outline-col">Course Outline</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-bottom">
+                <td>Course 1</td>
+                <td>Owner A</td>
+                <td>Program 1</td>
+                <td>Approved</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 2</td>
+                <td>Owner B</td>
+                <td>Program 2</td>
+                <td>Approved</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 3</td>
+                <td>Owner C</td>
+                <td>Program 3</td>
+                <td>Approved</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 4</td>
+                <td>Owner D</td>
+                <td>Program 4</td>
+                <td>Pending</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 5</td>
+                <td>Owner E</td>
+                <td>Program 5</td>
+                <td>Pending</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 6</td>
+                <td>Owner F</td>
+                <td>Program 6</td>
+                <td>Rejected</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+            <tr class="border-bottom">
+                <td>Course 7</td>
+                <td>Owner G</td>
+                <td>
+                    <div>Program 7</div>
+                    <div>Program 4</div>
+                </td>
+                <td>Rejected</td>
+                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 <style>
-    .login-container {
-        max-width: 400px;
-        margin: 50px auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
+    .text-purple {
+        color: #8e44ad;
     }
 
-    .form-group {
-        margin-bottom: 15px;
+    .btn-purple {
+        background-color: #8e44ad;
+        color: white;
+        border: none;
     }
 
-    .form-control {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-    }
+        .btn-purple:hover {
+            background-color: #732d91;
+        }
 
-    .btn-primary {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
+    .btn-secondary {
+        background-color: #888;
         border: none;
         color: white;
-        font-size: 16px;
-        cursor: pointer;
     }
 
-        .btn-primary:hover {
-            background-color: #0056b3;
+        .btn-secondary:hover {
+            background-color: #777;
         }
+
+    .form-label {
+        font-size: 0.85rem;
+        color: #888;
+        margin-bottom: 0.25rem;
+    }
+
+/*     .table th, .table td {
+        padding: 0.75rem 0.5rem;
+    } */
+
+/*     .input-group .form-control {
+        border-right: none;
+    } */
+
+    .input-group .btn {
+        border-left: none;
+    }
+
+    .outline-col {
+        width: 120px;
+        white-space: nowrap; 
+    }
+
 </style>
-
-@code {
-    private string username;
-    private string password;
-
-
-    private async Task HandleLogin()
-    {
-        try
-        {
-            var loginRequest = new { Username = username, Password = password };
-            var response = await Http.PostAsJsonAsync("https://localhost:7196/api/Auth/login", loginRequest);
-
-            if (response.IsSuccessStatusCode)
-            {
-                var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
-                await JSRuntime.InvokeVoidAsync("alert", result.Message); // Display success message
-            }
-            else
-            {
-                var error = await response.Content.ReadAsStringAsync();
-                await JSRuntime.InvokeVoidAsync("alert", $"Login failed: {error}"); // Display error message
-            }
-        }
-        catch (Exception ex)
-        {
-            await JSRuntime.InvokeVoidAsync("alert", $"An error occurred: {ex.Message}");
-        }
-    }
-
-    public class LoginResponse
-    {
-        public string Message { get; set; }
-        public UserInfo User { get; set; }
-    }
-
-    public class UserInfo
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int RoleId { get; set; }
-        public string Role { get; set; }
-    }
-}
