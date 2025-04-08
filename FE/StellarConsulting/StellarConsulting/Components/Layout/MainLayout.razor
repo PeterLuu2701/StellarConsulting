@@ -56,7 +56,7 @@
 
     // Determine if current page is the login page
     private bool IsLoginPage =>
-        NavManager.Uri.Contains("/login", StringComparison.OrdinalIgnoreCase);
+        NavManager.Uri.Contains("/", StringComparison.OrdinalIgnoreCase);
 
     protected override void OnInitialized()
     {
