@@ -58,6 +58,10 @@
     private bool IsLoginPage =>
         NavManager.Uri.Contains("/login", StringComparison.OrdinalIgnoreCase);
 
+    // Determine if current page is the login page
+    private bool IsApprovalPage =>
+        NavManager.Uri.Contains("/approval", StringComparison.OrdinalIgnoreCase);
+
     protected override void OnInitialized()
     {
         AvatarInitials = GetInitials(Username);
