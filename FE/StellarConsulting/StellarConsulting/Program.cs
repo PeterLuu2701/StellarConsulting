@@ -22,11 +22,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 // ✅ Add Razor Components
+builder.Services.AddControllers(); 
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // ✅ Register HttpClient for API access
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(sp.GetRequiredService<NavigationManager>().BaseUri) });
+builder.Services.AddScoped(sp => new HttpClient
+{
+    BaseAddress = new Uri("https://localhost:7196/") 
+});
+
 
 var app = builder.Build();
 
@@ -47,6 +53,7 @@ app.UseAuthorization();
 app.UseAntiforgery();
 
 // ✅ Map Razor components
+app.MapControllers(); 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 

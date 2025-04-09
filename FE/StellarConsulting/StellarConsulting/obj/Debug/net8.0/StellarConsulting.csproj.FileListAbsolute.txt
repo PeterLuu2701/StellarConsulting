@@ -106,3 +106,13 @@ D:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net
 D:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\obj\Debug\net8.0\StellarConsulting.csproj.AssemblyReference.cache
 D:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\obj\Debug\net8.0\StellarConsulting.csproj.CopyComplete
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\obj\Debug\net8.0\StellarConsulting.csproj.AssemblyReference.cache
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\obj\Debug\net8.0\StellarC.689392B8.Up2Date

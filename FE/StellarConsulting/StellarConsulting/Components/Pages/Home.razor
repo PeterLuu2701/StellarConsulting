@@ -67,14 +67,15 @@
                 @foreach (var course in courseOutlines)
                 {
                     <tr class="border-bottom">
-                        <td>@course.CourseName</td>
-                        <td>@course.CourseOwner</td>
-                        <td>@course.Program</td>
-                        <td>@course.Status</td>
+                        <td>@course.ProgramCourseId</td>
+                        <td>@course.InstructorId</td>
+                        <td>@course.AcademicYear</td>
+                        <td>@course.PassingGrade</td>
                         <td>
                             <button class="btn btn-secondary rounded-pill px-4">View</button>
                         </td>
                     </tr>
+
                 }
             </tbody>
         </table>
@@ -125,48 +126,67 @@
 @code {
     private List<CourseOutline> courseOutlines = new();
     private bool isLoading = true;
+    private string? errorMessage;
+    private bool hasLoaded = false;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        try
+        if (!hasLoaded)
         {
-            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
-
-            if (string.IsNullOrWhiteSpace(token))
+            hasLoaded = true;
+            try
             {
-                await JSRuntime.InvokeVoidAsync("alert", "Not logged in. Please login.");
-                return;
+                var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+
+                if (string.IsNullOrWhiteSpace(token))
+                {
+                    errorMessage = "Not logged in. Please login.";
+                }
+                else
+                {
+                    var request = new HttpRequestMessage(HttpMethod.Get, "api/CourseOutlines");
+                    request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                    var response = await Http.SendAsync(request);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        courseOutlines = await response.Content.ReadFromJsonAsync<List<CourseOutline>>();
+                    }
+                    else
+                    {
+                        var error = await response.Content.ReadAsStringAsync();
+                        errorMessage = $"Failed to load data: {error}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                errorMessage = $"Error: {ex.Message}";
+            }
+            finally
+            {
+                isLoading = false;
+                StateHasChanged(); // 通知页面重新渲染
             }
 
-            var request = new HttpRequestMessage(HttpMethod.Get, "api/CourseOutlines");
-            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-
-            var response = await Http.SendAsync(request);
-
-            if (response.IsSuccessStatusCode)
+            if (!string.IsNullOrEmpty(errorMessage))
             {
-                courseOutlines = await response.Content.ReadFromJsonAsync<List<CourseOutline>>();
-            }
-            else
-            {
-                var error = await response.Content.ReadAsStringAsync();
-                await JSRuntime.InvokeVoidAsync("alert", $"Failed to load data: {error}");
+                await JSRuntime.InvokeVoidAsync("alert", errorMessage);
             }
         }
-        catch (Exception ex)
-        {
-            await JSRuntime.InvokeVoidAsync("alert", $"Error: {ex.Message}");
-        }
-
-        isLoading = false;
     }
 
     public class CourseOutline
     {
         public int Id { get; set; }
-        public string CourseName { get; set; }
-        public string CourseOwner { get; set; }
-        public string Program { get; set; }
-        public string Status { get; set; }
+        public int ProgramCourseId { get; set; }
+        public string AcademicYear { get; set; }
+        public string StudentAssessment { get; set; }
+        public string PassingGrade { get; set; }
+        public int InstructorId { get; set; }
+        public DateTime PreparedDate { get; set; }
     }
+
 }
+
