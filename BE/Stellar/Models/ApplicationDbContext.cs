@@ -71,7 +71,10 @@ public partial class ApplicationDbContext : DbContext
             entity.ToTable("course_outline");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.AcademicChairApproval).HasColumnName("academic_chair_approval");
+            entity.Property(e => e.AcademicChairApproval)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("academic_chair_approval");
             entity.Property(e => e.AcademicYear)
                 .HasMaxLength(255)
                 .IsUnicode(false)
@@ -97,7 +100,10 @@ public partial class ApplicationDbContext : DbContext
             entity.Property(e => e.PreparedByUserId).HasColumnName("prepared_by_user_id");
             entity.Property(e => e.PreparedDate).HasColumnName("prepared_date");
             entity.Property(e => e.ProgramCourseId).HasColumnName("program_course_id");
-            entity.Property(e => e.ProgramHeadApproval).HasColumnName("program_head_approval");
+            entity.Property(e => e.ProgramHeadApproval)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("program_head_approval");
             entity.Property(e => e.StudentAssessment)
                 .HasColumnType("text")
                 .HasColumnName("student_assessment");

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace Stellar.Models;
@@ -17,6 +18,7 @@ public partial class Program
 
     public virtual Degree? Degree { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<ProgramCourse> ProgramCourses { get; set; } = new List<ProgramCourse>();
 
     public virtual School? School { get; set; }

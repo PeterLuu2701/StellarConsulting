@@ -147,7 +147,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0MzkxNjczOSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.C1e8YOOx9o2fGdIvbFts_sE7EUKMm_zS8Zwtt68w9Lk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
 						"type": "text"
 					}
 				],
@@ -176,7 +176,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0MzkxNjczOSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.C1e8YOOx9o2fGdIvbFts_sE7EUKMm_zS8Zwtt68w9Lk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
 						"type": "text"
 					}
 				],
@@ -330,6 +330,157 @@
 						"api",
 						"programs",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-course-outline-for-program-head",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7196/api/programheadapproval",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"programheadapproval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "program-head-approve",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDE1MjYxMCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.cU43hSIYYyN3cwFXexEdOnBGcOdCBLktQLzxD_10lPQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7196/api/programheadapproval/approve/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"programheadapproval",
+						"approve",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "program-head-reject",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7196/api/programheadapproval/reject/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"programheadapproval",
+						"reject",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-course-outline-for-academic-chair",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7196/api/academicchairapproval",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"academicchairapproval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "academic-chair-approve",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7196/api/academicchairapproval/reject/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"academicchairapproval",
+						"reject",
+						"2"
 					]
 				}
 			},

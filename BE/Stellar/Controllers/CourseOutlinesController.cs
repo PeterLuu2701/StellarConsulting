@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Stellar.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization; 
+using Microsoft.AspNetCore.Authorization;
+using Stellar.DTOs;
 
 namespace Stellar.Controllers
 {
@@ -22,21 +23,41 @@ namespace Stellar.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<CourseOutline>>> GetCourseOutlines()
         {
-            return await _context.CourseOutlines.ToListAsync();
+            var courseOutlines = await _context.CourseOutlines
+            .Include(co => co.Instructor)
+            .Include(co => co.PreparedByUser)
+            .Include(co => co.ApprovedByProgramHeadUser)
+            .Include(co => co.ApprovedByAcademicChairUser)
+            .Include(co => co.ProgramCourse)
+                .ThenInclude(pc => pc.Program)
+            .Include(co => co.ProgramCourse)
+                .ThenInclude(pc => pc.Course)
+            .ToListAsync();
+
+                return Ok(courseOutlines);
         }
 
         [HttpGet("{id}")]
         [Authorize] 
         public async Task<ActionResult<CourseOutline>> GetCourseOutline(int id)
         {
-            var courseOutline = await _context.CourseOutlines.FindAsync(id);
+            var courseOutline = await _context.CourseOutlines
+            .Include(co => co.Instructor)
+            .Include(co => co.PreparedByUser)
+            .Include(co => co.ApprovedByProgramHeadUser)
+            .Include(co => co.ApprovedByAcademicChairUser)
+            .Include(co => co.ProgramCourse)
+                .ThenInclude(pc => pc.Program)
+            .Include(co => co.ProgramCourse)
+                .ThenInclude(pc => pc.Course)
+            .FirstOrDefaultAsync(co => co.Id == id);
 
             if (courseOutline == null)
             {
                 return NotFound();
             }
 
-            return courseOutline;
+            return Ok(courseOutline);
         }
 
         [HttpGet("search")]

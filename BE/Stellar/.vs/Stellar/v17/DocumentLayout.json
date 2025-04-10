@@ -3,32 +3,60 @@
   "WorkspaceRootPath": "D:\\COMP253\\BE\\Stellar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\academicchairapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\academicchairapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\programscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\programscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\programheadapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\programheadapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\courseoutlinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\courseoutlinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\learningoutcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\learningoutcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\programcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\programcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\learningstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\learningstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\degree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\degree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\courseoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\courseoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\dtos\\programinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:dtos\\programinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\schoolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,65 +78,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "LearningStep.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\LearningStep.cs",
+              "RelativeDocumentMoniker": "Models\\LearningStep.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\LearningStep.cs",
+              "RelativeToolTip": "Models\\LearningStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:04:05.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProgramInfoDto.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\ProgramInfoDto.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
-              "RelativeToolTip": "DTOs\\ProgramInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T04:28:03.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProgramsController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\ProgramsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProgramsController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\ProgramsController.cs",
-              "RelativeToolTip": "Controllers\\ProgramsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvxYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T04:16:44.814Z",
+              "WhenOpened": "2025-04-10T08:12:46.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SchoolController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\SchoolController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SchoolController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\SchoolController.cs",
-              "RelativeToolTip": "Controllers\\SchoolController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "LearningOutcome.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\LearningOutcome.cs",
+              "RelativeDocumentMoniker": "Models\\LearningOutcome.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\LearningOutcome.cs",
+              "RelativeToolTip": "Models\\LearningOutcome.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T03:59:50.162Z"
+              "WhenOpened": "2025-04-10T08:12:37.223Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Degree.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Degree.cs",
+              "RelativeDocumentMoniker": "Models\\Degree.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Degree.cs",
+              "RelativeToolTip": "Models\\Degree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T03:24:03.296Z"
+              "WhenOpened": "2025-04-10T08:12:24.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProgramCourse.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\ProgramCourse.cs",
+              "RelativeDocumentMoniker": "Models\\ProgramCourse.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\ProgramCourse.cs",
+              "RelativeToolTip": "Models\\ProgramCourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:03:01.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Program.cs",
+              "RelativeDocumentMoniker": "Models\\Program.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Program.cs",
+              "RelativeToolTip": "Models\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T08:02:44.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProgramInfoDto.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ProgramInfoDto.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
+              "RelativeToolTip": "DTOs\\ProgramInfoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T07:55:33.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -118,22 +162,101 @@
               "RelativeDocumentMoniker": "Controllers\\CourseOutlinesController.cs",
               "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\CourseOutlinesController.cs",
               "RelativeToolTip": "Controllers\\CourseOutlinesController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvxwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T03:15:22.967Z",
+              "WhenOpened": "2025-04-10T07:48:24.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AcademicChairApprovalController.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\AcademicChairApprovalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AcademicChairApprovalController.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\AcademicChairApprovalController.cs",
+              "RelativeToolTip": "Controllers\\AcademicChairApprovalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T07:38:44.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:46:29.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:46:24.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "School.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\School.cs",
+              "RelativeDocumentMoniker": "Models\\School.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\School.cs",
+              "RelativeToolTip": "Models\\School.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:46:22.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T16:32:04.081Z"
+              "WhenOpened": "2025-04-08T20:46:19.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CourseOutline.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\CourseOutline.cs",
+              "RelativeDocumentMoniker": "Models\\CourseOutline.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\CourseOutline.cs",
+              "RelativeToolTip": "Models\\CourseOutline.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA/wBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:40:41.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgramHeadApprovalController.cs",
+              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\ProgramHeadApprovalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProgramHeadApprovalController.cs",
+              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\ProgramHeadApprovalController.cs",
+              "RelativeToolTip": "Controllers\\ProgramHeadApprovalController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T20:34:57.21Z",
+              "EditorCaption": ""
             }
           ]
         }
