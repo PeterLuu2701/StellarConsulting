@@ -58,7 +58,7 @@
                 <tr>
                     <th>Course Name</th>
                     <th>Course Owner</th>
-                    <th>Program</th>
+                    <th>Academic Year</th>
                     <th>Status</th>
                     <th class="outline-col">Course Outline</th>
                 </tr>
@@ -67,10 +67,14 @@
                 @foreach (var course in courseOutlines)
                 {
                     <tr class="border-bottom">
-                        <td>@course.ProgramCourseId</td>
-                        <td>@course.InstructorId</td>
+                        <td>@course.ProgramCourse.Course.Name</td>
+                        <td>@course.Instructor.Name</td>
                         <td>@course.AcademicYear</td>
-                        <td>@course.PassingGrade</td>
+                        <td>
+                            <span class="badge @GetBootstrapBadgeClass(course.AcademicChairApproval)">
+                                @course.AcademicChairApproval
+                            </span>
+                        </td>
                         <td>
                             <button class="btn btn-secondary rounded-pill px-4">View</button>
                         </td>
@@ -129,6 +133,18 @@
     private string? errorMessage;
     private bool hasLoaded = false;
 
+    private string GetBootstrapBadgeClass(string status)
+    {
+        return status?.ToLower() switch
+        {
+            "approved" => "bg-success text-light",
+            "pending" => "bg-warning text-dark",
+            "rejected" => "bg-danger text-light",
+            _ => "bg-secondary text-light"
+        };
+    }
+
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (!hasLoaded)
@@ -167,7 +183,7 @@
             finally
             {
                 isLoading = false;
-                StateHasChanged(); // 通知页面重新渲染
+                StateHasChanged(); 
             }
 
             if (!string.IsNullOrEmpty(errorMessage))
@@ -186,7 +202,39 @@
         public string PassingGrade { get; set; }
         public int InstructorId { get; set; }
         public DateTime PreparedDate { get; set; }
+        public Instructor Instructor { get; set; } 
+        public ProgramCourse ProgramCourse { get; set; }
+        public string ProgramHeadApproval { get; set; }
+        public string AcademicChairApproval { get; set; }
+
     }
+
+    public class Instructor
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class ProgramCourse
+    {
+        public int Id { get; set; }
+        public Course Course { get; set; }
+        public Program Program { get; set; }
+    }
+
+    public class Course
+    {
+        public int Id { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class Program
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
 
 }
 

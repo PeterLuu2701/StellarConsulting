@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace Stellar.Models;
@@ -15,5 +16,6 @@ public partial class LearningOutcome
 
     public virtual Course? Course { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<LearningStep> LearningSteps { get; set; } = new List<LearningStep>();
 }

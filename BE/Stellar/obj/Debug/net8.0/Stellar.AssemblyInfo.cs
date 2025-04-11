@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Stellar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd65f18523be7113454012bf7e1044e39d796891")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4de6e8832a95ec995a59b2fe258e6a35770efee4")]
->>>>>>> newOutline
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a4d9b1fac1f9cdf4ebd8e08e1facd5ae5f9af79")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stellar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stellar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
