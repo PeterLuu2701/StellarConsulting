@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|e:\\github\\stellarconsulting\\fe\\stellarconsulting\\stellarconsulting\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F633094C-C2FB-45DC-BD3E-093D8AABD819}|StellarConsulting\\StellarConsulting.csproj|solutionrelative:stellarconsulting\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "app.css",
               "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "StellarConsulting\\wwwroot\\app.css",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Program.cs",
               "RelativeDocumentMoniker": "StellarConsulting\\Program.cs",
@@ -94,12 +94,11 @@
               "RelativeToolTip": "StellarConsulting\\Program.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAmwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T17:49:32.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T17:49:32.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Login.razor",
               "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "StellarConsulting\\Components\\Pages\\Login.razor",
@@ -107,33 +106,33 @@
               "RelativeToolTip": "StellarConsulting\\Components\\Pages\\Login.razor",
               "ViewState": "AgIAAE4AAAAAAAAAAAAUwGIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T17:47:17.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T17:47:17.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "StellarConsulting\\Components\\Pages\\Home.razor",
               "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "StellarConsulting\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwEcAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-28T15:56:42.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "StellarConsulting\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "E:\\GITHUB\\StellarConsulting\\FE\\StellarConsulting\\StellarConsulting\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "StellarConsulting\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-28T15:10:34.832Z"
+              "WhenOpened": "2025-03-28T15:10:34.832Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,61 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\COMP253\\BE\\Stellar\\",
+  "WorkspaceRootPath": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\academicchairapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\controllers\\academicchairapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\academicchairapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\programheadapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\controllers\\programheadapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\programheadapprovalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\controllers\\courseoutlinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\controllers\\courseoutlinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:controllers\\courseoutlinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\learningoutcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\learningoutcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\learningoutcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\programcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\programcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\programcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\learningstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\learningstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\learningstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\degree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\degree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\degree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\courseoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\courseoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\courseoutline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|d:\\comp253\\be\\stellar\\dtos\\programinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|e:\\github\\stellarconsulting\\be\\stellar\\dtos\\programinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BC8DAE5-504F-4004-99BD-5EED1BF241C3}|Stellar.csproj|solutionrelative:dtos\\programinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -66,11 +66,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
@@ -80,102 +96,95 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "LearningStep.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\LearningStep.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\LearningStep.cs",
               "RelativeDocumentMoniker": "Models\\LearningStep.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\LearningStep.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\LearningStep.cs",
               "RelativeToolTip": "Models\\LearningStep.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:12:46.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T08:12:46.516Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "LearningOutcome.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\LearningOutcome.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\LearningOutcome.cs",
               "RelativeDocumentMoniker": "Models\\LearningOutcome.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\LearningOutcome.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\LearningOutcome.cs",
               "RelativeToolTip": "Models\\LearningOutcome.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:12:37.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T08:12:37.223Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Degree.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Degree.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Degree.cs",
               "RelativeDocumentMoniker": "Models\\Degree.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Degree.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Degree.cs",
               "RelativeToolTip": "Models\\Degree.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:12:24.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T08:12:24.154Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ProgramCourse.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\ProgramCourse.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\ProgramCourse.cs",
               "RelativeDocumentMoniker": "Models\\ProgramCourse.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\ProgramCourse.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\ProgramCourse.cs",
               "RelativeToolTip": "Models\\ProgramCourse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:03:01.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T08:03:01.859Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Program.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Program.cs",
               "RelativeDocumentMoniker": "Models\\Program.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Program.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Program.cs",
               "RelativeToolTip": "Models\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T08:02:44.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T08:02:44.577Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "ProgramInfoDto.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ProgramInfoDto.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\DTOs\\ProgramInfoDto.cs",
               "RelativeToolTip": "DTOs\\ProgramInfoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T07:55:33.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T07:55:33.241Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CourseOutlinesController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\CourseOutlinesController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Controllers\\CourseOutlinesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CourseOutlinesController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\CourseOutlinesController.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Controllers\\CourseOutlinesController.cs",
               "RelativeToolTip": "Controllers\\CourseOutlinesController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T07:48:24.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T07:48:24.623Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AcademicChairApprovalController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\AcademicChairApprovalController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Controllers\\AcademicChairApprovalController.cs",
               "RelativeDocumentMoniker": "Controllers\\AcademicChairApprovalController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\AcademicChairApprovalController.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Controllers\\AcademicChairApprovalController.cs",
               "RelativeToolTip": "Controllers\\AcademicChairApprovalController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T07:38:44.595Z",
               "EditorCaption": ""
@@ -184,79 +193,73 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Course.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Course.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Course.cs",
               "RelativeDocumentMoniker": "Models\\Course.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Course.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Course.cs",
               "RelativeToolTip": "Models\\Course.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:46:29.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:46:29.058Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "User.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\User.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\User.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:46:24.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:46:24.235Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "School.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\School.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\School.cs",
               "RelativeDocumentMoniker": "Models\\School.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\School.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\School.cs",
               "RelativeToolTip": "Models\\School.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:46:22.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:46:22.3Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Role.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\Role.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Models\\Role.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\Role.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\Role.cs",
               "RelativeToolTip": "Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:46:19.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:46:19.507Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "CourseOutline.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Models\\CourseOutline.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\CourseOutline.cs",
               "RelativeDocumentMoniker": "Models\\CourseOutline.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Models\\CourseOutline.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Models\\CourseOutline.cs",
               "RelativeToolTip": "Models\\CourseOutline.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA/wBsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:40:41.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:40:41.617Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ProgramHeadApprovalController.cs",
-              "DocumentMoniker": "D:\\COMP253\\BE\\Stellar\\Controllers\\ProgramHeadApprovalController.cs",
+              "DocumentMoniker": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Controllers\\ProgramHeadApprovalController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProgramHeadApprovalController.cs",
-              "ToolTip": "D:\\COMP253\\BE\\Stellar\\Controllers\\ProgramHeadApprovalController.cs",
+              "ToolTip": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Controllers\\ProgramHeadApprovalController.cs",
               "RelativeToolTip": "Controllers\\ProgramHeadApprovalController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:34:57.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:34:57.21Z"
             }
           ]
         }
