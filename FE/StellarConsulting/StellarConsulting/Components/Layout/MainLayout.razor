@@ -55,15 +55,8 @@
     private string AvatarColor;
 
     // Determine if current page is the login page
-    private bool IsLoginPage
-    {
-        get
-        {
-            var uri = new Uri(NavManager.Uri);
-            return uri.AbsolutePath == "/";
-        }
-    }
-
+    private bool IsLoginPage =>
+        NavManager.Uri.Contains("/", StringComparison.OrdinalIgnoreCase);
 
     protected override void OnInitialized()
     {
