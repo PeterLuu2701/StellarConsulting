@@ -1,0 +1,129 @@
+﻿@page "/course-outline/{id:int}"
+@inject NavigationManager NavManager
+@rendermode InteractiveServer
+
+<div class="container py-5">
+    <div class="mb-3 text-md-end">
+        <button class="btn btn-secondary shadow-sm rounded-pill px-4 me-2">Edit</button>
+        <button class="btn btn-secondary shadow-sm rounded-pill px-4 me-2">Print/Export</button>
+        <button class="btn btn-secondary shadow-sm rounded-pill px-4" @onclick="GoBack">Back</button>
+    </div>
+
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-purple mb-0">Course Outline</h3>
+        <span class="fw-semibold">Academic Year: <span class="text-muted">2024-2025</span></span>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+            <tbody>
+                <tr>
+                    <th class="bg-light w-25">Program:</th>
+                    <td>Program A</td>
+                    <th class="bg-light w-25">Course:</th>
+                    <td>Course 5</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Course Description:</th>
+                    <td colspan="3">Course Description example text</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Pre-Requisites:</th>
+                    <td>Pre-Requisites example text</td>
+                    <th class="bg-light">Co-Requisites:</th>
+                    <td>Co-Requisites example text</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Course Hours:</th>
+                    <td>40</td>
+                    <th class="bg-light">Course Units:</th>
+                    <td>Course Units example text</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Student Assessment:</th>
+                    <td>Student Assessment example text</td>
+                    <th class="bg-light">Grade/Passing Grade:</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">PLAR Method:</th>
+                    <td colspan="3">PLAR Method example text</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Learning Outcomes:</th>
+                    <td colspan="3">
+                        <ul class="mb-0">
+                            <li>Learning outcome example 1</li>
+                            <li>Learning outcome example 2</li>
+                            <li>Learning outcome example 3</li>
+                            <li>Learning outcome example 4</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Prepared/Updated By:</th>
+                    <td>John Doe</td>
+                    <th class="bg-light">Date:</th>
+                    <td>March 30, 2025</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Approved by Program Head:</th>
+                    <td>Joe Smith</td>
+                    <th class="bg-light">Date:</th>
+                    <td>March 31, 2025</td>
+                </tr>
+                <tr>
+                    <th class="bg-light">Approved by Academic Chair:</th>
+                    <td>Jane Doe</td>
+                    <th class="bg-light">Date:</th>
+                    <td>March 31, 2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5 class="mt-5 fw-bold text-purple">Learning Outcomes Matrix</h5>
+    <table class="table table-bordered mt-2">
+        <thead class="table-secondary">
+            <tr>
+                <th>Learning Outcomes / Assessment Tools</th>
+                <th>Learning Steps</th>
+                <th>Learning Activities / Resources</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 120px;">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .text-purple {
+        color: #8e44ad;
+    }
+
+    .btn-secondary {
+        background-color: #888;
+        border: none;
+        color: white;
+    }
+
+        .btn-secondary:hover {
+            background-color: #777;
+        }
+</style>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private void GoBack()
+    {
+        NavManager.NavigateTo("/home");
+    }
+}

@@ -2,6 +2,8 @@
 @rendermode InteractiveServer
 @inject HttpClient Http
 @inject IJSRuntime JSRuntime
+@inject NavigationManager NavManager
+
 
 <div class="container py-4">
 
@@ -75,9 +77,16 @@
                                 @course.AcademicChairApproval
                             </span>
                         </td>
-                        <td>
-                            <button class="btn btn-secondary rounded-pill px-4">View</button>
-                        </td>
+<td>
+                            <button class="btn btn-secondary rounded-pill px-4"
+                                    @onclick='() => NavManager.NavigateTo($"/course-outline/{course.Id}")'>
+                                View
+                            </button>
+
+
+
+</td>
+
                     </tr>
 
                 }
