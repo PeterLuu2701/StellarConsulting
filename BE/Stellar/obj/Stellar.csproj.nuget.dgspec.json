@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj": {}
+    "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj": {}
   },
   "projects": {
-    "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj": {
+    "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj",
+        "projectUniqueName": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj",
         "projectName": "Stellar",
-        "projectPath": "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj",
-        "packagesPath": "C:\\Users\\Yan\\.nuget\\packages\\",
-        "outputPath": "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\obj\\",
+        "projectPath": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj",
+        "packagesPath": "C:\\Users\\yansi\\.nuget\\packages\\",
+        "outputPath": "E:\\GITHUB\\StellarConsulting\\BE\\Stellar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yansi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -96,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
