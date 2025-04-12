@@ -9,7 +9,7 @@ public partial class LearningStep
 
     public string? LearningText { get; set; }
 
-    public int? LearningOutcomeId { get; set; }
+    public int LearningOutcomeId { get; set; }
 
-    public virtual LearningOutcome? LearningOutcome { get; set; }
+    public virtual LearningOutcome LearningOutcome { get; set; }
 }

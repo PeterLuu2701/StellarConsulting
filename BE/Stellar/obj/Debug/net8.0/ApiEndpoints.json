@@ -125,6 +125,58 @@
   },
   {
     "ContainingType": "Stellar.Controllers.CourseOutlinesController",
+    "Method": "CreateCourseOutline",
+    "RelativePath": "api/CourseOutlines/create-course-outline",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Stellar.DTOs.CourseOutlineDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Stellar.Models.CourseOutline",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Stellar.Controllers.CourseOutlinesController",
+    "Method": "DuplicateCourseOutline",
+    "RelativePath": "api/CourseOutlines/duplicate/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Stellar.Models.CourseOutline",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Stellar.Controllers.CourseOutlinesController",
     "Method": "SearchCourseOutlines",
     "RelativePath": "api/CourseOutlines/search",
     "HttpMethod": "GET",

@@ -10,12 +10,11 @@ public partial class LearningOutcome
 
     public string? OutcomeText { get; set; }
 
-    public int? CourseId { get; set; }
-
     public string? LearningActivities { get; set; }
 
-    public virtual Course? Course { get; set; }
+    public int CourseOutlineId { get; set; }
 
-    [JsonIgnore]
+    public virtual CourseOutline CourseOutline { get; set; }
+
     public virtual ICollection<LearningStep> LearningSteps { get; set; } = new List<LearningStep>();
 }

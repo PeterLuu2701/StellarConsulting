@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace Stellar.Models;
@@ -35,15 +36,17 @@ public partial class CourseOutline
 
     public DateOnly? ApprovedByAcademicChairDate { get; set; }
 
-    public string ProgramHeadApproval { get; set; }
+    public string? ProgramHeadApproval { get; set; }
 
-    public string AcademicChairApproval { get; set; }
+    public string? AcademicChairApproval { get; set; }
 
     public virtual User? ApprovedByAcademicChairUser { get; set; }
 
     public virtual User? ApprovedByProgramHeadUser { get; set; }
 
     public virtual User? Instructor { get; set; }
+
+    public virtual ICollection<LearningOutcome> LearningOutcomes { get; set; } = new List<LearningOutcome>();
 
     public virtual User? PreparedByUser { get; set; }
 
