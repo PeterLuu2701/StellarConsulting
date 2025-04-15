@@ -30,11 +30,16 @@ namespace Stellar.Controllers
             .Include(co => co.ApprovedByAcademicChairUser)
             .Include(co => co.ProgramCourse)
                 .ThenInclude(pc => pc.Program)
+                    .ThenInclude(p => p.School)
+                    .ThenInclude(s => s.Programs)
             .Include(co => co.ProgramCourse)
                 .ThenInclude(pc => pc.Course)
+                    .ThenInclude(c => c.ProgramCourses)
+            .Include(co => co.LearningOutcomes) 
+                .ThenInclude(lo => lo.LearningSteps) 
             .ToListAsync();
 
-                return Ok(courseOutlines);
+            return Ok(courseOutlines);
         }
 
         [HttpGet("{id}")]
@@ -48,8 +53,13 @@ namespace Stellar.Controllers
             .Include(co => co.ApprovedByAcademicChairUser)
             .Include(co => co.ProgramCourse)
                 .ThenInclude(pc => pc.Program)
+                    .ThenInclude(p => p.School)
+                    .ThenInclude(s => s.Programs)
             .Include(co => co.ProgramCourse)
                 .ThenInclude(pc => pc.Course)
+                    .ThenInclude(c => c.ProgramCourses)
+            .Include(co => co.LearningOutcomes)
+                .ThenInclude(lo => lo.LearningSteps)
             .FirstOrDefaultAsync(co => co.Id == id);
 
             if (courseOutline == null)
@@ -101,6 +111,127 @@ namespace Stellar.Controllers
                 return NotFound("No course outlines found matching your criteria.");
             }
             return courseOutlines;
+        }
+
+        //create-course-outline
+        [HttpPost("create-course-outline")]
+        [Authorize]
+        public async Task<ActionResult<CourseOutline>> CreateCourseOutline(CourseOutlineDto dto)
+        {
+            var courseOutline = new CourseOutline
+            {
+                ProgramCourseId = dto.ProgramCourseId,
+                AcademicYear = dto.AcademicYear,
+                PreRequisites = dto.PreRequisites,
+                CoRequisites = dto.CoRequisites,
+                StudentAssessment = dto.StudentAssessment,
+                PassingGrade = dto.PassingGrade,
+                PlarMethod = dto.PlarMethod,
+                InstructorId = dto.InstructorId,
+                PreparedByUserId = dto.PreparedByUserId,
+                PreparedDate = DateOnly.FromDateTime(DateTime.Now),
+                ApprovedByProgramHeadUserId = dto.ApprovedByProgramHeadUserId,
+                ApprovedByAcademicChairUserId = dto.ApprovedByAcademicChairUserId,
+                ProgramHeadApproval = "Pending",
+                AcademicChairApproval = "Pending"
+            };
+
+            _context.CourseOutlines.Add(courseOutline);
+            await _context.SaveChangesAsync(); 
+
+            foreach (var outcomeDto in dto.LearningOutcomes)
+            {
+                var outcome = new LearningOutcome
+                {
+                    OutcomeText = outcomeDto.OutcomeText,
+                    LearningActivities = outcomeDto.LearningActivities,
+                    CourseOutlineId = courseOutline.Id
+                };
+
+                _context.LearningOutcomes.Add(outcome);
+                await _context.SaveChangesAsync(); 
+
+                foreach (var stepDto in outcomeDto.LearningSteps)
+                {
+                    var step = new LearningStep
+                    {
+                        LearningOutcomeId = outcome.Id,
+                        LearningText = stepDto.LearningText
+                    };
+                    _context.LearningSteps.Add(step);
+                }
+            }
+
+            await _context.SaveChangesAsync(); 
+
+            return CreatedAtAction(nameof(GetCourseOutline), new { id = courseOutline.Id }, courseOutline);
+        }
+
+        //copy
+        [HttpPost("duplicate/{id}")]
+        [Authorize]
+        public async Task<ActionResult<CourseOutline>> DuplicateCourseOutline(int id)
+        {
+            var original = await _context.CourseOutlines
+                .Include(co => co.LearningOutcomes)
+                    .ThenInclude(lo => lo.LearningSteps)
+                .FirstOrDefaultAsync(co => co.Id == id);
+
+            if (original == null)
+            {
+                return NotFound();
+            }
+
+            var duplicate = new CourseOutline
+            {
+                ProgramCourseId = original.ProgramCourseId,
+                AcademicYear = original.AcademicYear,
+                PreRequisites = original.PreRequisites,
+                CoRequisites = original.CoRequisites,
+                StudentAssessment = original.StudentAssessment,
+                PassingGrade = original.PassingGrade,
+                PlarMethod = original.PlarMethod,
+                InstructorId = original.InstructorId,
+                PreparedByUserId = original.PreparedByUserId,
+                PreparedDate = DateOnly.FromDateTime(DateTime.Now),
+                ApprovedByProgramHeadUserId = null,
+                ApprovedByAcademicChairUserId = null,
+                ApprovedByProgramHeadDate = null,
+                ApprovedByAcademicChairDate = null,
+                ProgramHeadApproval = "Pending",
+                AcademicChairApproval = "Pending"
+            };
+
+            _context.CourseOutlines.Add(duplicate);
+            await _context.SaveChangesAsync(); 
+
+            foreach (var outcome in original.LearningOutcomes)
+            {
+                var newOutcome = new LearningOutcome
+                {
+                    CourseOutlineId = duplicate.Id,
+                    OutcomeText = outcome.OutcomeText,
+                    LearningActivities = outcome.LearningActivities
+                };
+
+                _context.LearningOutcomes.Add(newOutcome);
+                await _context.SaveChangesAsync(); 
+
+                foreach (var step in outcome.LearningSteps)
+                {
+                    var newStep = new LearningStep
+                    {
+                        LearningOutcomeId = newOutcome.Id,
+                        LearningText = step.LearningText
+                    };
+
+                    _context.LearningSteps.Add(newStep);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetCourseOutline", new { id = duplicate.Id }, duplicate);
         }
     }
 }

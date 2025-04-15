@@ -13,6 +13,7 @@ public partial class ApplicationDbContext : DbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
+        this.ChangeTracker.LazyLoadingEnabled = false;
     }
 
     public virtual DbSet<Course> Courses { get; set; }
@@ -149,7 +150,7 @@ public partial class ApplicationDbContext : DbContext
             entity.ToTable("learning_outcome");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.CourseId).HasColumnName("course_id");
+            entity.Property(e => e.CourseOutlineId).HasColumnName("course_outline_id");
             entity.Property(e => e.LearningActivities)
                 .HasColumnType("text")
                 .HasColumnName("learning_activities");
@@ -158,9 +159,9 @@ public partial class ApplicationDbContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("outcome_text");
 
-            entity.HasOne(d => d.Course).WithMany(p => p.LearningOutcomes)
-                .HasForeignKey(d => d.CourseId)
-                .HasConstraintName("FK__learning___cours__440B1D61");
+            entity.HasOne(d => d.CourseOutline).WithMany(p => p.LearningOutcomes)
+                .HasForeignKey(d => d.CourseOutlineId)
+                .HasConstraintName("FK_learning_outcome_course_outline");
         });
 
         modelBuilder.Entity<LearningStep>(entity =>
