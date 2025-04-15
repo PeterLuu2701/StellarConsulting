@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
+using System.Text.RegularExpressions;
 
 namespace Stellar.Controllers
 {
@@ -77,6 +78,74 @@ namespace Stellar.Controllers
                 User = userInfo
             });
         }
+
+        // POST: api/auth/register
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] dynamic model)
+        {
+            if (model == null ||
+                string.IsNullOrEmpty((string)(model.name ?? "")) ||
+                string.IsNullOrEmpty((string)(model.password ?? "")))
+            {
+                return BadRequest("Name and password are required.");
+            }
+
+            string username = model.name;
+            string password = model.password;
+
+            // 1. Check if username already exists (case-insensitive)
+            var existingUser = await _context.Users
+                .AnyAsync(u => u.Name!.ToLower() == username!.ToLower());
+
+            if (existingUser)
+            {
+                return BadRequest("Username already exists.");
+            }
+
+            // Validate password with Regex
+            // - At least 8 characters
+            // - At least one uppercase letter
+            // - At least one digit
+            // - At least one special character
+            var passwordPattern = @"^(?=.*[A-Z])(?=.*\d)(?=.*[^\w\d\s]).{8,}$";
+            if (!Regex.IsMatch(password, passwordPattern))
+            {
+                return BadRequest("Password must be at least 8 characters long, contain at least one uppercase letter, one number, and one special character.");
+            }
+
+            // Set default role as "Instructor"
+            var instructorRole = await _context.Roles.FirstOrDefaultAsync(r => r.Name == "Instructor");
+            if (instructorRole == null)
+            {
+                return BadRequest("Instructor role not found.");
+            }
+
+            // Create new user
+            var user = new User
+            {
+                Name = username,
+                Password = password,  // Ideally, hash the password before storing
+                RoleId = instructorRole.Id
+            };
+
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            var userInfo = new
+            {
+                user.Id,
+                user.Name,
+                user.RoleId,
+                Role = user.Role?.Name // Keep this in the response for immediate use
+            };
+
+            return CreatedAtAction(nameof(Login), new { username = user.Name }, new
+            {
+                Message = "User registered successfully.",
+                User = userInfo
+            });
+        }
+
 
         [Authorize]
         [HttpPost("logout")]
