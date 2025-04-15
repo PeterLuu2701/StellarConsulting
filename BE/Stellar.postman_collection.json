@@ -147,7 +147,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDUwMzAwNywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.trR8S4anC3ylAIhUrBpLN2IDV-i1J3PcqM27lyUyLJ0",
 						"type": "text"
 					}
 				],
@@ -176,12 +176,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDI3Nzc5MCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.eM6znTuxBOaR272_Ixqs3zAfPodS32sjeBrsNIanSpU",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDUwMzAwNywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.trR8S4anC3ylAIhUrBpLN2IDV-i1J3PcqM27lyUyLJ0",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://localhost:7196/api/courseoutlines/1",
+					"raw": "https://localhost:7196/api/courseoutlines/7",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -190,7 +190,7 @@
 					"path": [
 						"api",
 						"courseoutlines",
-						"1"
+						"7"
 					]
 				}
 			},
@@ -496,13 +496,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDMyNTk3NywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.BhfzfJgfyRa9hL8NXQn3CJMotcObV6geTUFH1WHe-zQ",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDc1NDkzNCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.O2_4fWF0bhqbdnYCKHIKRqeOo-InX-gz0gGSmuVgsX0",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programCourseId\": 1,\r\n  \"academicYear\": \"2024-2025\",\r\n  \"preRequisites\": \"Math\",\r\n  \"coRequisites\": \"Physics\",\r\n  \"studentAssessment\": \"Quizzes, Projects\",\r\n  \"passingGrade\": \"50%\",\r\n  \"plarMethod\": \"Portfolio\",\r\n  \"instructorId\": 1,\r\n  \"preparedByUserId\": 1,\r\n  \"preparedDate\": \"2025-04-10\",\r\n  \"approvedByProgramHeadUserId\": 2,\r\n  \"approvedByAcademicChairUserId\": 4,\r\n  \"learningOutcomes\": [\r\n    {\r\n      \"outcomeText\": \"Demonstrate understanding of OOP concepts\",\r\n      \"learningActivities\": \"Lecture, Labs\",\r\n      \"learningSteps\": [\r\n        { \"learningText\": \"Define class and object\" },\r\n        { \"learningText\": \"Implement inheritance and polymorphism\" }\r\n      ]\r\n    },\r\n    {\r\n      \"outcomeText\": \"Use Git for version control\",\r\n      \"learningActivities\": \"Workshops\",\r\n      \"learningSteps\": [\r\n        { \"learningText\": \"Initialize Git repository\" },\r\n        { \"learningText\": \"Commit and push changes\" }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"raw": "{\r\n  \"programCourseId\": 2,\r\n  \"academicYear\": \"2024-2025\",\r\n  \"preRequisites\": \"Test\",\r\n  \"coRequisites\": \"Test\",\r\n  \"studentAssessment\": \"Test\",\r\n  \"passingGrade\": \"50%\",\r\n  \"plarMethod\": \"Portfolio\",\r\n  \"instructorId\": 1,\r\n  \"preparedByUserId\": 1,\r\n  \"preparedDate\": \"2025-04-10\",\r\n  \"approvedByProgramHeadUserId\": 2,\r\n  \"approvedByAcademicChairUserId\": 4,\r\n  \"learningOutcomes\": [\r\n    {\r\n      \"outcomeText\": \"Test\",\r\n      \"learningActivities\": \"Test\",\r\n      \"learningSteps\": [\r\n        { \"learningText\": \"Test\" },\r\n        { \"learningText\": \"Test\" }\r\n      ]\r\n    },\r\n    {\r\n      \"outcomeText\": \"Test\",\r\n      \"learningActivities\": \"Test\",\r\n      \"learningSteps\": [\r\n        { \"learningText\": \"Test\" },\r\n        { \"learningText\": \"Test\" }\r\n      ]\r\n    }\r\n  ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -548,6 +548,137 @@
 						"courseoutlines",
 						"duplicate",
 						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-role",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDc1NDkzNCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.O2_4fWF0bhqbdnYCKHIKRqeOo-InX-gz0gGSmuVgsX0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tester 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7196/api/role/create-role",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"role",
+						"create-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-role",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDc1NDkzNCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.O2_4fWF0bhqbdnYCKHIKRqeOo-InX-gz0gGSmuVgsX0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"QA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7196/api/role/update-role/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"role",
+						"update-role",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-role",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiSm9obiBTbWl0aCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJ1c2VySWQiOiIxIiwidXNlcm5hbWUiOiJKb2huIFNtaXRoIiwicm9sZUlkIjoiMSIsImV4cCI6MTc0NDc1NDkzNCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEifQ.O2_4fWF0bhqbdnYCKHIKRqeOo-InX-gz0gGSmuVgsX0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7196/api/role/delete-role/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"role",
+						"delete-role",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tester\",\r\n    \"password\": \"@1234Tester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7196/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7196",
+					"path": [
+						"api",
+						"auth",
+						"register"
 					]
 				}
 			},
