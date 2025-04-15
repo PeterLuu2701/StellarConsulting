@@ -1,0 +1,238 @@
+﻿@page "/course-outline/{id:int}"
+@rendermode InteractiveServer
+@inject NavigationManager NavManager
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+
+<div class="container py-5">
+    <div class="mb-3 text-md-end">
+        <button class="btn btn-secondary shadow-sm rounded-pill px-4 me-2">Edit</button>
+        <button class="btn btn-secondary shadow-sm rounded-pill px-4 me-2">Print/Export</button>
+        <button class="btn btn-secondary shadow-sm rounded-pill px-4" @onclick="GoBack">Back</button>
+    </div>
+
+    @if (isLoading)
+    {
+        <p>Loading course outline...</p>
+    }
+    else if (course == null)
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+    else
+    {
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold text-purple mb-0">Course Outline</h3>
+            <span class="fw-semibold">Academic Year: <span class="text-muted">@course.AcademicYear</span></span>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <tbody>
+                    <tr>
+                        <th class="bg-light w-25">Program:</th>
+                        <td>@course.ProgramCourse.Program.Name</td>
+                        <th class="bg-light w-25">Course:</th>
+                        <td>@course.ProgramCourse.Course.Name</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Course Description:</th>
+                        <td colspan="3">@course.ProgramCourse.Course.Description</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Pre-Requisites:</th>
+                        <td>@course.PreRequisites</td>
+                        <th class="bg-light">Co-Requisites:</th>
+                        <td>@course.CoRequisites</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Course Hours:</th>
+                        <td>@course.ProgramCourse.Course.Hours</td>
+                        <th class="bg-light">Course Units:</th>
+                        <td>@course.ProgramCourse.Course.Units</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Student Assessment:</th>
+                        <td>@course.StudentAssessment</td>
+                        <th class="bg-light">Grade/Passing Grade:</th>
+                        <td>@course.PassingGrade</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">PLAR Method:</th>
+                        <td colspan="3">@course.PlarMethod</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Learning Outcomes:</th>
+                        <td colspan="3">
+                            <ul class="mb-0">
+                                @foreach (var outcome in course.LearningOutcomes)
+                                {
+                                    <li>@outcome.OutcomeText</li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Prepared/Updated By:</th>
+                        <td>@course.PreparedByUser?.Name</td>
+                        <th class="bg-light">Date:</th>
+                        <td>@course.PreparedDate.ToString("MMMM dd, yyyy")</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Approved by Program Head:</th>
+                        <td>@course.ApprovedByProgramHeadUser?.Name</td>
+                        <th class="bg-light">Date:</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th class="bg-light">Approved by Academic Chair:</th>
+                        <td>@course.ApprovedByAcademicChairUser?.Name</td>
+                        <th class="bg-light">Date:</th>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5 class="mt-5 fw-bold text-purple">Learning Outcomes Matrix</h5>
+        <table class="table table-bordered mt-2">
+            <thead class="table-secondary">
+                <tr>
+                    <th>Learning Outcomes / Assessment Tools</th>
+                    <th>Learning Steps</th>
+                    <th>Learning Activities / Resources</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var outcome in course.LearningOutcomes)
+                {
+                    <tr>
+                        <td>@outcome.OutcomeText</td>
+                        <td>
+                            <ul class="mb-0">
+                                @foreach (var step in outcome.LearningSteps)
+                                {
+                                    <li>@step.LearningText</li>
+                                }
+                            </ul>
+                        </td>
+                        <td>@outcome.LearningActivities</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+<style>
+    .text-purple {
+        color: #8e44ad;
+    }
+
+    .btn-secondary {
+        background-color: #888;
+        border: none;
+        color: white;
+    }
+
+        .btn-secondary:hover {
+            background-color: #777;
+        }
+</style>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private CourseOutlineDetail course;
+    private bool isLoading = true;
+    private string errorMessage;
+
+    // Load course outline by ID from API
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+            var request = new HttpRequestMessage(HttpMethod.Get, $"api/CourseOutlines/{Id}");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var response = await Http.SendAsync(request);
+            if (response.IsSuccessStatusCode)
+            {
+                course = await response.Content.ReadFromJsonAsync<CourseOutlineDetail>();
+            }
+            else
+            {
+                errorMessage = "Failed to load course outline data.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void GoBack()
+    {
+        NavManager.NavigateTo("/home");
+    }
+
+    // Model classes
+    public class CourseOutlineDetail
+    {
+        public string AcademicYear { get; set; }
+        public string PreRequisites { get; set; }
+        public string CoRequisites { get; set; }
+        public string StudentAssessment { get; set; }
+        public string PassingGrade { get; set; }
+        public string PlarMethod { get; set; }
+        public DateTime PreparedDate { get; set; }
+        public User PreparedByUser { get; set; }
+        public User ApprovedByProgramHeadUser { get; set; }
+        public User ApprovedByAcademicChairUser { get; set; }
+        public ProgramCourse ProgramCourse { get; set; }
+        public List<LearningOutcome> LearningOutcomes { get; set; }
+    }
+
+    public class User
+    {
+        public string Name { get; set; }
+    }
+
+    public class ProgramCourse
+    {
+        public Course Course { get; set; }
+        public Program Program { get; set; }
+    }
+
+    public class Course
+    {
+        public string Name { get; set; }
+        public string Code { get; set; }
+        public string Description { get; set; }
+        public int Hours { get; set; }
+        public int Units { get; set; }
+    }
+
+    public class Program
+    {
+        public string Name { get; set; }
+    }
+
+    public class LearningOutcome
+    {
+        public string OutcomeText { get; set; }
+        public string LearningActivities { get; set; }
+        public List<LearningStep> LearningSteps { get; set; }
+    }
+
+    public class LearningStep
+    {
+        public string LearningText { get; set; }
+    }
+}

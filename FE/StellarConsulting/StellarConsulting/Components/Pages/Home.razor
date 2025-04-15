@@ -1,36 +1,69 @@
-﻿@page "/"
+﻿@page "/home"
 @rendermode InteractiveServer
 @inject HttpClient Http
 @inject IJSRuntime JSRuntime
+@inject NavigationManager NavManager
 
 <div class="container py-4">
 
-    <!-- Drop-down Row -->
+    <!-- Filter Row -->
     <div class="row justify-content-start align-items-end mb-3">
         <div class="col-auto">
             <label class="form-label">Program</label>
-            <select class="form-select rounded-pill">
-                <option selected>Business Information System</option>
-                <option>Option 2</option>
+            <select class="form-select rounded-pill" @bind="selectedProgram">
+                <option value="">All Programs</option>
+                @foreach (var program in programs)
+                {
+                    <option>@program</option>
+                }
             </select>
         </div>
+
         <div class="col-auto">
             <label class="form-label">Course</label>
-            <select class="form-select rounded-pill">
-                <option selected>COMP233 - Object Oriented Programming</option>
-                <option>Option 2</option>
+            <select class="form-select rounded-pill" @bind="selectedCourse">
+                <option value="">All Courses</option>
+                @foreach (var course in courses)
+                {
+                    <option>@course</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label class="form-label">School</label>
+            <select class="form-select rounded-pill" @bind="selectedSchool">
+                <option value="">All Schools</option>
+                @foreach (var school in schools)
+                {
+                    <option>@school</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label class="form-label">Academic Year</label>
+            <select class="form-select rounded-pill" @bind="selectedAcademicYear">
+                <option value="">All Years</option>
+                @foreach (var year in academicYears)
+                {
+                    <option>@year</option>
+                }
             </select>
         </div>
     </div>
-    <br />
-    <!-- Buttons and Search Row -->
+
+    <!-- Actions and Search Row -->
     <div class="row align-items-center mb-4">
         <div class="col">
-            <button class="btn btn-secondary shadow-sm rounded-pill px-4">Add New</button>
+            <button class="btn btn-secondary shadow-sm rounded-pill px-4" @onclick="GoToAddPage">Add New</button>
+
         </div>
         <div class="col">
             <div class="input-group">
-                <input type="text" class="form-control rounded-start-pill" placeholder="Search" />
+                <input type="text" class="form-control rounded-start-pill"
+                       placeholder="Search"
+                       @bind="searchText" />
                 <button class="btn btn-purple rounded-end-pill">
                     <i class="bi bi-search"></i>
                 </button>
@@ -41,72 +74,50 @@
         </div>
     </div>
 
-    <!-- Table -->
-    <table class="table table-borderless align-middle">
-        <thead class="border-bottom text-purple">
-            <tr>
-                <th>Course Name</th>
-                <th>Course Owner</th>
-                <th>Program</th>
-                <th>Status</th>
-                <th class="outline-col">Course Outline</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="border-bottom">
-                <td>Course 1</td>
-                <td>Owner A</td>
-                <td>Program 1</td>
-                <td>Approved</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 2</td>
-                <td>Owner B</td>
-                <td>Program 2</td>
-                <td>Approved</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 3</td>
-                <td>Owner C</td>
-                <td>Program 3</td>
-                <td>Approved</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 4</td>
-                <td>Owner D</td>
-                <td>Program 4</td>
-                <td>Pending</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 5</td>
-                <td>Owner E</td>
-                <td>Program 5</td>
-                <td>Pending</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 6</td>
-                <td>Owner F</td>
-                <td>Program 6</td>
-                <td>Rejected</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>Course 7</td>
-                <td>Owner G</td>
-                <td>
-                    <div>Program 7</div>
-                    <div>Program 4</div>
-                </td>
-                <td>Rejected</td>
-                <td><button class="btn btn-secondary rounded-pill px-4">View</button></td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Course Outline Table -->
+    @if (isLoading)
+    {
+        <p>Loading course outlines...</p>
+    }
+    else if (courseOutlines?.Count == 0)
+    {
+        <p>No course outlines found.</p>
+    }
+    else
+    {
+        <table class="table table-borderless align-middle">
+            <thead class="border-bottom text-purple">
+                <tr>
+                    <th>Course Name</th>
+                    <th>Course Owner</th>
+                    <th>Academic Year</th>
+                    <th>Status</th>
+                    <th class="outline-col">Course Outline</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in filteredCourseOutlines)
+                {
+                    <tr class="border-bottom">
+                        <td>@course.ProgramCourse.Course.Name</td>
+                        <td>@course.Instructor.Name</td>
+                        <td>@course.AcademicYear</td>
+                        <td>
+                            <span class="badge @GetBootstrapBadgeClass(course.AcademicChairApproval)">
+                                @course.AcademicChairApproval
+                            </span>
+                        </td>
+                        <td>
+                            <button class="btn btn-secondary rounded-pill px-4"
+                                    @onclick='() => NavManager.NavigateTo($"/course-outline/{course.Id}")'>
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </div>
 
 <style>
@@ -140,21 +151,189 @@
         margin-bottom: 0.25rem;
     }
 
-/*     .table th, .table td {
-        padding: 0.75rem 0.5rem;
-    } */
-
-/*     .input-group .form-control {
-        border-right: none;
-    } */
-
-    .input-group .btn {
-        border-left: none;
-    }
-
     .outline-col {
         width: 120px;
-        white-space: nowrap; 
+        white-space: nowrap;
+    }
+</style>
+
+@code {
+    // Main data list from API
+    private List<CourseOutline> courseOutlines = new();
+    private bool isLoading = true;
+    private string? errorMessage;
+    private bool hasLoaded = false;
+
+    // Dropdown options
+    private List<string> programs = new();
+    private List<string> courses = new();
+    private List<string> schools = new();
+    private List<string> academicYears = new();
+
+    // Selected values for filtering
+    private string selectedProgram = "";
+    private string selectedCourse = "";
+    private string selectedSchool = "";
+    private string selectedAcademicYear = "";
+    private string searchText = "";
+
+    // Filtered result list
+    private List<CourseOutline> filteredCourseOutlines => FilterCourseOutlines();
+
+    // Filters courseOutlines based on selected filters
+    private List<CourseOutline> FilterCourseOutlines()
+    {
+        return courseOutlines
+            .Where(c =>
+                (string.IsNullOrWhiteSpace(selectedProgram) || c.ProgramCourse.Program.Name == selectedProgram) &&
+                (string.IsNullOrWhiteSpace(selectedCourse) || $"{c.ProgramCourse.Course.Code} - {c.ProgramCourse.Course.Name}" == selectedCourse) &&
+                (string.IsNullOrWhiteSpace(selectedSchool) || c.ProgramCourse.Program.School?.Name == selectedSchool) &&
+                (string.IsNullOrWhiteSpace(selectedAcademicYear) || c.AcademicYear == selectedAcademicYear) &&
+                (string.IsNullOrWhiteSpace(searchText) ||
+                    c.ProgramCourse.Course.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase) ||
+                    c.Instructor.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)))
+            .ToList();
     }
 
-</style>
+    // Maps approval status to Bootstrap badge style
+    private string GetBootstrapBadgeClass(string status)
+    {
+        return status?.ToLower() switch
+        {
+            "approved" => "bg-success text-light",
+            "pending" => "bg-warning text-dark",
+            "rejected" => "bg-danger text-light",
+            _ => "bg-secondary text-light"
+        };
+    }
+
+    private void GoToAddPage()
+    {
+        NavManager.NavigateTo("/course-outline/add");
+    }
+
+
+    // Called after component renders - loads data from API
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!hasLoaded)
+        {
+            hasLoaded = true;
+            try
+            {
+                var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+
+                if (string.IsNullOrWhiteSpace(token))
+                {
+                    errorMessage = "Not logged in. Please login.";
+                }
+                else
+                {
+                    var request = new HttpRequestMessage(HttpMethod.Get, "api/CourseOutlines");
+                    request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                    var response = await Http.SendAsync(request);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        courseOutlines = await response.Content.ReadFromJsonAsync<List<CourseOutline>>();
+
+                        programs = courseOutlines
+                            .Select(c => c.ProgramCourse.Program.Name)
+                            .Distinct()
+                            .OrderBy(p => p)
+                            .ToList();
+
+                        courses = courseOutlines
+                            .Select(c => $"{c.ProgramCourse.Course.Code} - {c.ProgramCourse.Course.Name}")
+                            .Distinct()
+                            .OrderBy(c => c)
+                            .ToList();
+
+                        schools = courseOutlines
+                            .Select(c => c.ProgramCourse.Program.School?.Name ?? "")
+                            .Where(s => !string.IsNullOrWhiteSpace(s))
+                            .Distinct()
+                            .OrderBy(s => s)
+                            .ToList();
+
+                        academicYears = courseOutlines
+                            .Select(c => c.AcademicYear)
+                            .Where(y => !string.IsNullOrWhiteSpace(y))
+                            .Distinct()
+                            .OrderByDescending(y => y)
+                            .ToList();
+                    }
+                    else
+                    {
+                        var error = await response.Content.ReadAsStringAsync();
+                        errorMessage = $"Failed to load data: {error}";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                errorMessage = $"Error: {ex.Message}";
+            }
+            finally
+            {
+                isLoading = false;
+                StateHasChanged();
+            }
+
+            if (!string.IsNullOrEmpty(errorMessage))
+            {
+                await JSRuntime.InvokeVoidAsync("alert", errorMessage);
+            }
+        }
+    }
+
+    // Data models matching the API structure
+    public class CourseOutline
+    {
+        public int Id { get; set; }
+        public int ProgramCourseId { get; set; }
+        public string AcademicYear { get; set; }
+        public string StudentAssessment { get; set; }
+        public string PassingGrade { get; set; }
+        public int InstructorId { get; set; }
+        public DateTime PreparedDate { get; set; }
+        public Instructor Instructor { get; set; }
+        public ProgramCourse ProgramCourse { get; set; }
+        public string ProgramHeadApproval { get; set; }
+        public string AcademicChairApproval { get; set; }
+    }
+
+    public class Instructor
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class ProgramCourse
+    {
+        public int Id { get; set; }
+        public Course Course { get; set; }
+        public Program Program { get; set; }
+    }
+
+    public class Course
+    {
+        public int Id { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class Program
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public School School { get; set; }
+    }
+
+    public class School
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+}

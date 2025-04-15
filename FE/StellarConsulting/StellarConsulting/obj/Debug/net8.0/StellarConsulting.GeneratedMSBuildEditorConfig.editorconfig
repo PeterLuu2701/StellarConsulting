@@ -9,61 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StellarConsulting
 build_property.RootNamespace = StellarConsulting
-build_property.ProjectDir = D:\COMP253\FE\StellarConsulting\StellarConsulting\
+build_property.ProjectDir = D:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\COMP253\FE\StellarConsulting\StellarConsulting
+build_property.MSBuildProjectDirectory = D:\GITHUB\StellarConsulting\FE\StellarConsulting\StellarConsulting
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/App.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Layout/BootstrapScripts.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Layout/BootstrapScripts.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQm9vdHN0cmFwU2NyaXB0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Pages/Approval.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBcHByb3ZhbC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Pages/Counter.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Pages/Error.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/CourseOutline.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Vyc2VPdXRsaW5lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/CourseOutlineAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Vyc2VPdXRsaW5lQWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Pages/Home.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Pages/Login.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Pages/Weather.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Routes.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/_Imports.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Layout/MainLayout.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-k2s8vvgyyg
 
-[D:/COMP253/FE/StellarConsulting/StellarConsulting/Components/Layout/NavMenu.razor]
+[D:/GITHUB/StellarConsulting/FE/StellarConsulting/StellarConsulting/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-zyksvxcrx0

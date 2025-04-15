@@ -1,30 +1,59 @@
-using StellarConsulting.Components;
-using Microsoft.AspNetCore.Components; // Add this using directive
+﻿using StellarConsulting.Components;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ✅ Add JWT authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "StellarApp", // 🔁 must match appsettings.json
+            ValidAudience = "StellarUsers", // 🔁 must match appsettings.json
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecretKey123!")) // 🔁 must match appsettings.json
+        };
+    });
+
+// ✅ Add Razor Components
+builder.Services.AddControllers(); 
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-// Register HttpClient
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(sp.GetRequiredService<NavigationManager>().BaseUri) });
+// ✅ Register HttpClient for API access
+builder.Services.AddScoped(sp => new HttpClient
+{
+    BaseAddress = new Uri("https://localhost:7196/") 
+});
+
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ✅ Configure HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
+
+// ✅ Add authentication/authorization middleware
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UseAntiforgery();
 
+// ✅ Map Razor components
+app.MapControllers(); 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 

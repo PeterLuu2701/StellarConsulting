@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\COMP253\\BE\\Stellar\\Stellar.csproj": {}
+    "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj": {}
   },
   "projects": {
-    "D:\\COMP253\\BE\\Stellar\\Stellar.csproj": {
+    "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\COMP253\\BE\\Stellar\\Stellar.csproj",
+        "projectUniqueName": "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj",
         "projectName": "Stellar",
-        "projectPath": "D:\\COMP253\\BE\\Stellar\\Stellar.csproj",
-        "packagesPath": "C:\\Users\\longl\\.nuget\\packages\\",
-        "outputPath": "D:\\COMP253\\BE\\Stellar\\obj\\",
+        "projectPath": "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\Stellar.csproj",
+        "packagesPath": "C:\\Users\\Yan\\.nuget\\packages\\",
+        "outputPath": "D:\\GITHUB\\StellarConsulting\\BE\\Stellar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\longl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,13 +38,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -102,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
