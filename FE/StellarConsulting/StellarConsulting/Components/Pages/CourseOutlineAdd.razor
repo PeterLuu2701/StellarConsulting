@@ -1,0 +1,203 @@
+﻿@page "/course-outline/add"
+@inject HttpClient Http
+@inject NavigationManager NavManager
+@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
+
+<h3 class="fw-bold text-purple mb-4">New Course Outline</h3>
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+
+<div class="mb-3 text-end">
+    <button class="btn btn-secondary rounded-pill me-2" @onclick="SaveDraft">Save Draft</button>
+    <button class="btn btn-secondary rounded-pill me-2" @onclick="Submit">Submit</button>
+    <button class="btn btn-secondary rounded-pill" @onclick="GoBack">Cancel</button>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered align-middle">
+        <tbody>
+            <tr>
+                <th class="bg-light">Program:</th>
+                <td><input class="form-control" @bind="form.ProgramCourseId" placeholder="ProgramCourseId (int)" /></td>
+                <th class="bg-light">Course:</th>
+                <td>(AUTOMATIC)</td>
+            </tr>
+            <tr>
+                <th class="bg-light">Academic Year:</th>
+                <td colspan="3">
+                    <select class="form-select" @bind="form.AcademicYear">
+                        <option value="">Select Year</option>
+                        @foreach (var year in academicYearOptions)
+                        {
+                            <option value="@year">@year</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th class="bg-light">Pre-Requisites / Co-Requisites:</th>
+                <td><input class="form-control" @bind="form.PreRequisites" /></td>
+                <td><input class="form-control" @bind="form.CoRequisites" /></td>
+            </tr>
+            <tr>
+                <th class="bg-light">Student Assessment:</th>
+                <td><input class="form-control" @bind="form.StudentAssessment" /></td>
+                <th class="bg-light">Grade / Passing Grade:</th>
+                <td><input class="form-control" @bind="form.PassingGrade" /></td>
+            </tr>
+            <tr>
+                <th class="bg-light">PLAR Method:</th>
+                <td colspan="3"><input class="form-control" @bind="form.PlarMethod" /></td>
+            </tr>
+            <tr>
+                <th class="bg-light">Learning Outcomes:</th>
+                <td colspan="3">
+                    <div>
+                        @foreach (var outcome in form.LearningOutcomes)
+                        {
+                            <div class="mb-2 p-2 border rounded">
+                                <input class="form-control mb-1" placeholder="Outcome Text" @bind="outcome.OutcomeText" />
+                                <textarea class="form-control mb-1" placeholder="Learning Activities" @bind="outcome.LearningActivities"></textarea>
+
+                                <label class="form-label">Steps:</label>
+                                @foreach (var step in outcome.LearningSteps)
+                                {
+                                    <input class="form-control mb-1" placeholder="Learning Step" @bind="step.LearningText" />
+                                }
+
+                                <button class="btn btn-sm btn-outline-primary me-2" @onclick="() => AddStep(outcome)">+ Step</button>
+                                <button class="btn btn-sm btn-outline-danger" @onclick="() => RemoveOutcome(outcome)">Delete Outcome</button>
+                            </div>
+                        }
+
+                        <button class="btn btn-sm btn-outline-success mt-2" @onclick="AddOutcome">+ Add Learning Outcome</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .text-purple {
+        color: #8e44ad;
+    }
+</style>
+
+@code {
+    private CourseOutlineDto form = new();
+    private string errorMessage;
+
+    // Automatically generated academic year options
+    private List<string> academicYearOptions = new();
+
+    // Called when the page loads
+    protected override void OnInitialized()
+    {
+        GenerateAcademicYears(); // 👈 Auto-generate year list
+
+        // Default values (replace with actual user data if needed)
+        form.PreparedByUserId = 1;
+        form.InstructorId = 1;
+        form.ApprovedByProgramHeadUserId = null;
+        form.ApprovedByAcademicChairUserId = null;
+    }
+
+    // Generates the next 10 academic years like "2024-2025"
+    private void GenerateAcademicYears()
+    {
+        int startYear = DateTime.Now.Year;
+        for (int i = 0; i < 10; i++)
+        {
+            string year = $"{startYear + i}-{startYear + i + 1}";
+            academicYearOptions.Add(year);
+        }
+    }
+
+    private void AddOutcome()
+    {
+        form.LearningOutcomes.Add(new LearningOutcomeDto
+            {
+                LearningSteps = new List<LearningStepDto>()
+            });
+    }
+
+    private void AddStep(LearningOutcomeDto outcome)
+    {
+        outcome.LearningSteps.Add(new LearningStepDto());
+    }
+
+    private void RemoveOutcome(LearningOutcomeDto outcome)
+    {
+        form.LearningOutcomes.Remove(outcome);
+    }
+
+    private async Task Submit()
+    {
+        try
+        {
+            var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+
+            var request = new HttpRequestMessage(HttpMethod.Post, "api/CourseOutlines/create-course-outline");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            request.Content = JsonContent.Create(form);
+
+            var response = await Http.SendAsync(request);
+            if (response.IsSuccessStatusCode)
+            {
+                NavManager.NavigateTo("/home");
+            }
+            else
+            {
+                errorMessage = "Failed to submit course outline.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+    private void SaveDraft()
+    {
+        // Optional: store draft to localStorage or database
+    }
+
+    private void GoBack()
+    {
+        NavManager.NavigateTo("/home");
+    }
+
+    // DTOs for API request
+    public class CourseOutlineDto
+    {
+        public int ProgramCourseId { get; set; }
+        public string AcademicYear { get; set; }
+        public string PreRequisites { get; set; }
+        public string CoRequisites { get; set; }
+        public string StudentAssessment { get; set; }
+        public string PassingGrade { get; set; }
+        public string PlarMethod { get; set; }
+        public int InstructorId { get; set; }
+        public int PreparedByUserId { get; set; }
+        public int? ApprovedByProgramHeadUserId { get; set; }
+        public int? ApprovedByAcademicChairUserId { get; set; }
+        public List<LearningOutcomeDto> LearningOutcomes { get; set; } = new();
+    }
+
+    public class LearningOutcomeDto
+    {
+        public string OutcomeText { get; set; }
+        public string LearningActivities { get; set; }
+        public List<LearningStepDto> LearningSteps { get; set; } = new();
+    }
+
+    public class LearningStepDto
+    {
+        public string LearningText { get; set; }
+    }
+}
